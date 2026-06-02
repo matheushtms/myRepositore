@@ -121,11 +121,12 @@ body {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding: 1rem;
+  min-height: 100vh;
+  height: auto;
+  padding: 1.5rem 1rem;
   max-width: 1600px;
   margin: 0 auto;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 /* Cabeçalho Top Bar */
@@ -310,8 +311,9 @@ body {
 #hud-main-content {
   flex-grow: 1;
   position: relative;
-  overflow: hidden;
-  height: calc(100vh - 170px);
+  overflow: visible;
+  min-height: calc(100vh - 180px);
+  height: auto;
 }
 
 .view-panel {
@@ -331,14 +333,14 @@ body {
 .hud-grid {
   display: grid;
   grid-template-columns: 43% 55%;
-  height: 100%;
-  gap: 1.25rem;
+  height: auto;
+  gap: 1.5rem;
 }
 
 .grid-column {
-  height: 100%;
-  overflow-y: auto;
-  padding-right: 0.5rem;
+  height: auto;
+  overflow: visible;
+  padding-right: 0;
 }
 
 .flex-col {
@@ -394,8 +396,8 @@ body {
 }
 
 .panel-body {
-  padding: 1.2rem;
-  overflow-y: auto;
+  padding: 1.5rem;
+  overflow: visible;
 }
 
 /* ==========================================================================
@@ -508,12 +510,12 @@ body {
 }
 
 .profile-bio {
-  font-size: 0.8rem;
-  line-height: 1.5;
+  font-size: 0.88rem;
+  line-height: 1.6;
   color: var(--text-secondary);
   border-left: 2px solid var(--neon-cyan);
   padding-left: 0.8rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 /* Grid de Contatos */
@@ -579,19 +581,19 @@ body {
 #panel-ai .panel-body {
   display: flex;
   flex-direction: column;
-  height: 290px;
+  height: auto;
   justify-content: space-between;
-  padding: 0.8rem;
-  gap: 0.8rem;
+  padding: 1.2rem;
+  gap: 1rem;
 }
 
 .chat-display {
-  flex-grow: 1;
+  height: 320px;
   overflow-y: auto;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 0.8rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -776,7 +778,7 @@ body {
 .skill-info {
   display: flex;
   justify-content: space-between;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
 }
 
 .skill-name {
@@ -824,9 +826,9 @@ body {
   padding-left: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  height: 310px;
-  overflow-y: auto;
+  gap: 1.5rem;
+  height: auto;
+  overflow: visible;
   padding-top: 0.2rem;
 }
 
@@ -903,23 +905,23 @@ body {
 
 .timeline-job {
   font-family: var(--font-hud);
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   font-weight: 700;
   color: var(--text-primary);
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 .timeline-org {
   font-family: var(--font-body);
-  font-size: 0.7rem;
+  font-size: 0.82rem;
   font-weight: 500;
   color: var(--text-secondary);
   margin-bottom: 0.4rem;
 }
 
 .timeline-summary {
-  font-size: 0.72rem;
-  line-height: 1.4;
+  font-size: 0.82rem;
+  line-height: 1.5;
   color: var(--text-muted);
 }
 
@@ -1460,10 +1462,10 @@ body {
    RESPONSIVIDADE E ADAPTAÇÕES MOBILE
    ========================================================================== */
 
-@media (max-width: 1024px) {
+@media (max-width: 1240px) {
   .hud-grid {
     grid-template-columns: 1fr;
-    overflow-y: auto;
+    overflow: visible;
   }
 
   .project-showcase-layout {

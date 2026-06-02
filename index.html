@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matheus Henrique Tavares Malta | Neural Portfolio Core</title>
+  <meta name="description" content="Currículo Futurista e Interativo de Matheus Henrique Tavares Malta, estudante de Engenharia de Software. Interface Sci-Fi HUD, terminal cibernético e inteligência artificial.">
+  
+  <!-- Fontes Premium do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;600;800;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Plano de Fundo Animado de Partículas Vortex -->
+  <canvas id="neural-canvas"></canvas>
+  <div class="crt-scanline"></div>
+  <div class="crt-glitch-overlay"></div>
+
+  <!-- HUD Principal / Container de Aplicação -->
+  <div id="hud-container">
+    
+    <!-- Cabeçalho Futurista (Top Bar) -->
+    <header id="hud-header">
+      <div class="hud-logo-panel">
+        <div class="hud-scanner"></div>
+        <span class="hud-title" data-text="M_T_MALTA // CORE_OS_v4.0.28">M_T_MALTA // CORE_OS_v4.0.28</span>
+      </div>
+      
+      <div class="hud-status-panel">
+        <!-- Seletor de Idioma -->
+        <div class="hud-status-item">
+          <button id="lang-toggle" class="hud-btn-lang" aria-label="Alternar idioma / Toggle Language">
+            <span class="lang-icon">🌐</span>
+            <span id="lang-indicator">PT-BR</span>
+          </button>
+        </div>
+        
+        <div class="hud-status-item">
+          <span class="status-label" data-translate="sys_status">SYS_STATUS:</span>
+          <span class="status-val value-active animate-pulse" id="sys-status-val">ONLINE_SECURE</span>
+        </div>
+        
+        <div class="hud-status-item hidable-mobile">
+          <span class="status-label">LATENCY:</span>
+          <span id="ping-val" class="status-val">12ms</span>
+        </div>
+        
+        <div class="hud-status-item">
+          <button id="audio-toggle" class="hud-btn-audio" aria-label="Alternar áudio da interface">
+            <span class="audio-icon">🔇</span>
+            <span class="audio-text hidable-mobile" id="audio-btn-text" data-translate="audio_off">FX_OFF</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Barra de Abas / Seletores de Modo -->
+    <nav id="hud-navigation">
+      <button class="nav-tab active" data-target="hud-view" id="btn-hud-view">
+        <span class="tab-bracket">[</span>
+        <span class="tab-text" data-translate="nav_hud">INTERFACE_HUD_TÁTICA</span>
+        <span class="tab-bracket">]</span>
+      </button>
+      <button class="nav-tab" data-target="projects-view" id="btn-projects-view">
+        <span class="tab-bracket">[</span>
+        <span class="tab-text" data-translate="nav_projects">TELA_DE_PROJETOS</span>
+        <span class="tab-bracket">]</span>
+      </button>
+      <button class="nav-tab" data-target="contact-view" id="btn-contact-view">
+        <span class="tab-bracket">[</span>
+        <span class="tab-text" data-translate="nav_contact">CANAL_NEURAL_GMAIL</span>
+        <span class="tab-bracket">]</span>
+      </button>
+      <button class="nav-tab" data-target="terminal-view" id="btn-terminal-view">
+        <span class="tab-bracket">[</span>
+        <span class="tab-text" data-translate="nav_terminal">TERMINAL_DE_DADOS</span>
+        <span class="tab-bracket">]</span>
+      </button>
+      <button class="nav-tab" id="btn-print-resume">
+        <span class="tab-bracket">[</span>
+        <span class="tab-text" data-translate="nav_print">EXPORTAR_PDF_TRADICIONAL</span>
+        <span class="tab-bracket">]</span>
+      </button>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main id="hud-main-content">
+
+      <!-- ================= VISTA 1: HUD INTERFACES ================= -->
+      <div id="hud-view" class="view-panel active">
+        <div class="hud-grid">
+          
+          <!-- Coluna da Esquerda: Perfil, IA e Contatos -->
+          <div class="grid-column flex-col gap-4">
+            
+            <!-- Painel de Perfil Holográfico -->
+            <section class="hud-panel glass-panel" id="panel-profile">
+              <div class="panel-header">
+                <span class="panel-title-text" data-translate="profile_title">CIBER_IDENTIDADE</span>
+                <span class="panel-sub-text">MATHEUS H. T. MALTA</span>
+              </div>
+              <div class="panel-body">
+                <div class="profile-card">
+                  <div class="avatar-container">
+                    <div class="avatar-scanner"></div>
+                    <div class="avatar-glitch">
+                      <!-- Foto real do usuário integrada com o tema Sci-Fi -->
+                      <img id="profile-img" src="profile.jpg" alt="Matheus Henrique Tavares Malta" class="profile-image-hud">
+                    </div>
+                  </div>
+                  <div class="profile-details">
+                    <h1 class="profile-name">Matheus Henrique Tavares Malta</h1>
+                    <div class="profile-role" data-translate="profile_role">Estudante de Engenharia de Software</div>
+                    <div class="profile-meta">
+                      <span class="meta-tag" data-translate="profile_period">4º Período</span>
+                      <span class="meta-tag">PUC Minas</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="profile-bio">
+                  <p data-translate="profile_bio">Estudante de Engenharia de Software focado no desenvolvimento web (Front-end e Back-end) e Marketing Digital. Experiência prática na criação de estratégias de comunicação e logística de redes sociais, aliada a uma sólida formação técnica em programação (Java, Python, HTML/CSS). Proativo e focado em resolver problemas complexos em equipe através de tecnologia de ponta.</p>
+                </div>
+
+                <div class="contact-links-grid">
+                  <a href="mailto:matheushtms04@gmail.com" class="contact-card" target="_blank" id="lnk-email">
+                    <span class="contact-icon">📧</span>
+                    <span class="contact-info-text">
+                      <span class="contact-label">EMAIL_CORE</span>
+                      <span class="contact-value">matheushtms04@gmail.com</span>
+                    </span>
+                  </a>
+                  <a href="tel:+5531971046149" class="contact-card" id="lnk-phone">
+                    <span class="contact-icon">📱</span>
+                    <span class="contact-info-text">
+                      <span class="contact-label">NEURAL_PHONE</span>
+                      <span class="contact-value">(31) 97104-6149</span>
+                    </span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/matheus-malta-a39b66255/" class="contact-card" target="_blank" id="lnk-linkedin">
+                    <span class="contact-icon">🔗</span>
+                    <span class="contact-info-text">
+                      <span class="contact-label">LINKEDIN_NODE</span>
+                      <span class="contact-value">in/matheus-malta-...</span>
+                    </span>
+                  </a>
+                  <a href="https://github.com/matheushtms/matheushtms" class="contact-card" target="_blank" id="lnk-github">
+                    <span class="contact-icon">🐙</span>
+                    <span class="contact-info-text">
+                      <span class="contact-label">GITHUB_REPOSITORY</span>
+                      <span class="contact-value">matheushtms</span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </section>
+
+            <!-- Painel Matheus-GPT (Simulação de IA) -->
+            <section class="hud-panel glass-panel flex-grow" id="panel-ai">
+              <div class="panel-header">
+                <span class="panel-title-text" data-translate="ai_title">NÚCLEO_INTELECTO_IA</span>
+                <span class="panel-sub-text">MATHEUS-GPT v1.0.0</span>
+              </div>
+              <div class="panel-body flex-col h-full justify-between">
+                
+                <!-- Histórico de Chat -->
+                <div id="ai-chat-history" class="chat-display">
+                  <div class="chat-message bot">
+                    <span class="message-sender">[SYS_INTELECTO]:</span>
+                    <p class="message-text" data-translate="ai_greeting">Saudações, recrutador. Conectado com sucesso à rede neural de Matheus Malta. Selecione uma diretriz ou envie uma pergunta sobre suas qualificações para que eu processe uma resposta baseada em seus dados.</p>
+                  </div>
+                </div>
+
+                <!-- Prompts Rápidos de Clique -->
+                <div class="ai-quick-prompts">
+                  <button class="btn-prompt" data-prompt="why-hire" data-translate="ai_prompt_why">Por que contratar o Matheus?</button>
+                  <button class="btn-prompt" data-prompt="ai-experience" data-translate="ai_prompt_ai">Qual é a base dele em IA?</button>
+                  <button class="btn-prompt" data-prompt="puc-project" data-translate="ai_prompt_puc">Fale sobre a PUC Minas.</button>
+                  <button class="btn-prompt" data-prompt="future-goals" data-translate="ai_prompt_future">Qual o foco de carreira dele?</button>
+                </div>
+
+                <!-- Input do Chat -->
+                <div class="chat-input-wrapper">
+                  <span class="chat-prompt-symbol">▶</span>
+                  <input type="text" id="chat-input" placeholder="Digite uma pergunta customizada ou comando..." aria-label="Perguntar ao assistente IA" data-translate-placeholder="chat_placeholder">
+                  <button id="chat-submit" class="btn-send-chat" data-translate="chat_send">ENVIAR</button>
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+          <!-- Coluna da Direita: Habilidades e Linha do Tempo de Experiência -->
+          <div class="grid-column flex-col gap-4">
+            
+            <!-- Painel Habilidades Técnicas -->
+            <section class="hud-panel glass-panel" id="panel-skills">
+              <div class="panel-header">
+                <span class="panel-title-text" data-translate="skills_title">MATRIZ_HABILIDADES_TÉCNICAS</span>
+                <span class="panel-sub-text" data-translate="skills_sub">MÓDULOS DE HARDWARE INTERNOS</span>
+              </div>
+              <div class="panel-body">
+                <div class="skills-layout">
+                  
+                  <!-- Aba Habilidade 1 -->
+                  <div class="skill-category">
+                    <div class="category-name" data-translate="skills_cat_dev">Linguagens & Frameworks</div>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">JavaScript</span>
+                          <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 80%; background: var(--neon-cyan)"></div></div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Python</span>
+                          <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 75%; background: var(--neon-cyan)"></div></div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Java</span>
+                          <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 70%; background: var(--neon-cyan)"></div></div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">HTML5 / CSS3</span>
+                          <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 90%; background: var(--neon-cyan)"></div></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Aba Habilidade 2 -->
+                  <div class="skill-category">
+                    <div class="category-name" data-translate="skills_cat_ai">Inteligência Artificial & Dados</div>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name" data-translate="skill_recommend">Algoritmos de Recomendação</span>
+                          <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 65%; background: var(--neon-pink)"></div></div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name" data-translate="skill_logic">Lógica de Programação</span>
+                          <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 85%; background: var(--neon-pink)"></div></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Aba Habilidade 3 -->
+                  <div class="skill-category">
+                    <div class="category-name" data-translate="skills_cat_design">Design & Ferramentas</div>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Web Design / UI-UX (Figma)</span>
+                          <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 80%; background: var(--neon-amber)"></div></div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name" data-translate="skill_marketing">Marketing Digital / Identidade Visual</span>
+                          <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 85%; background: var(--neon-amber)"></div></div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name">Git & GitHub</span>
+                          <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 80%; background: var(--neon-amber)"></div></div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name" data-translate="skill_scrum">Metodologias Ágeis (Scrum)</span>
+                          <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 75%; background: var(--neon-amber)"></div></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Aba Habilidade 4 -->
+                  <div class="skill-category">
+                    <div class="category-name" data-translate="skills_cat_lang">Idiomas & Extras</div>
+                    <div class="skills-list">
+                      <div class="skill-item">
+                        <div class="skill-info">
+                          <span class="skill-name" data-translate="skill_english_label">Inglês</span>
+                          <span class="skill-percent" data-translate="skill_english_level">Básico</span>
+                        </div>
+                        <div class="skill-bar-container"><div class="skill-bar" style="width: 35%; background: #a855f7"></div></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+            <!-- Painel Linha do Tempo e Experiência -->
+            <section class="hud-panel glass-panel flex-grow" id="panel-chronology">
+              <div class="panel-header">
+                <span class="panel-title-text" data-translate="chronology_title">CRONOLOGIA_E_HISTÓRICO</span>
+                <span class="panel-sub-text" data-translate="chronology_sub">REGISTROS DE EXECUÇÃO DE SISTEMAS</span>
+              </div>
+              <div class="panel-body">
+                <div class="timeline-container">
+                  <div class="timeline-line"></div>
+                  
+                  <!-- Experiência 1 -->
+                  <div class="timeline-item clickable" data-dossier="exp-marketing">
+                    <div class="timeline-badge active"></div>
+                    <div class="timeline-date">Jan 2024 - Ago 2024</div>
+                    <div class="timeline-content">
+                      <h3 class="timeline-job" data-translate="timeline_job_1">Estagiário de Marketing e Logística</h3>
+                      <div class="timeline-org">Spagnol Odontologia</div>
+                      <p class="timeline-summary" data-translate="timeline_summary_1">Criação de estratégias digitais, gestão de presença online e controle logístico de comunicação com pacientes.</p>
+                      <span class="dossier-hint" data-translate="timeline_hint">Clique para expandir arquivo dossiê</span>
+                    </div>
+                  </div>
+
+                  <!-- Experiência 2 (Acadêmico/Pessoal) -->
+                  <div class="timeline-item clickable" data-dossier="exp-oficina">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-date" data-translate="timeline_date_2">Projeto Pessoal / Acadêmico</div>
+                    <div class="timeline-content">
+                      <h3 class="timeline-job" data-translate="timeline_job_2">Desenvolvedor de Sistemas (Oficina)</h3>
+                      <div class="timeline-org" data-translate="timeline_org_2">Iniciativa Própria</div>
+                      <p class="timeline-summary" data-translate="timeline_summary_2">Construção de Sistema de Gestão de peças utilizando Java, HTML5 e CSS3, otimizando fluxos organizacionais.</p>
+                      <span class="dossier-hint" data-translate="timeline_hint">Clique para expandir arquivo dossiê</span>
+                    </div>
+                  </div>
+
+                  <!-- Experiência 3 (Acadêmico/Extensão) -->
+                  <div class="timeline-item clickable" data-dossier="exp-puc">
+                    <div class="timeline-badge"></div>
+                    <div class="timeline-date" data-translate="timeline_date_3">Extensão Acadêmica</div>
+                    <div class="timeline-content">
+                      <h3 class="timeline-job" data-translate="timeline_job_3">Gestor de Comunicação Digital</h3>
+                      <div class="timeline-org">PUC Minas (Engenharia de Software)</div>
+                      <p class="timeline-summary" data-translate="timeline_summary_3">Atuação ativa no engajamento da comunidade acadêmica e desenvolvimento de conteúdos técnicos especializados.</p>
+                      <span class="dossier-hint" data-translate="timeline_hint">Clique para expandir arquivo dossiê</span>
+                    </div>
+                  </div>
+
+                  <!-- Formação Acadêmica -->
+                  <div class="timeline-item clickable" data-dossier="edu-software">
+                    <div class="timeline-badge edu"></div>
+                    <div class="timeline-date" data-translate="timeline_date_4">Previsão: Dez 2028</div>
+                    <div class="timeline-content">
+                      <h3 class="timeline-job" data-translate="timeline_job_4">Graduação em Engenharia de Software</h3>
+                      <div class="timeline-org">PUC Minas</div>
+                      <p class="timeline-summary" data-translate="timeline_summary_4">Base sólida em engenharia, algoritmos, desenvolvimento de software tático e práticas de design de sistemas.</p>
+                      <span class="dossier-hint" data-translate="timeline_hint">Clique para expandir arquivo dossiê</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- ================= VISTA 2: TELA DE PROJETOS ================= -->
+      <div id="projects-view" class="view-panel">
+        <div class="projects-panel glass-panel">
+          <div class="panel-header">
+            <span class="panel-title-text" data-translate="projects_panel_title">VISUALIZADOR_DE_TELAS_PROJETOS</span>
+            <span class="panel-sub-text" data-translate="projects_panel_sub">PROJEÇÕES GRÁFICAS DE SISTEMAS IMPLANTADOS</span>
+          </div>
+          <div class="panel-body flex-col gap-4">
+            
+            <div class="project-showcase-layout">
+              
+              <!-- Container da Imagem Holográfica -->
+              <div class="project-media-container">
+                <div class="project-media-scanner"></div>
+                
+                <!-- Slide 1: Oficina -->
+                <div class="project-slide active" id="slide-workshop">
+                  <img src="workshop.png" alt="Tela do Sistema de Oficina" class="project-image">
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag" data-translate="project_tag_active">IMPLANTADO // v1.2.0</span>
+                  </div>
+                </div>
+                
+                <!-- Slide 2: Odontologia -->
+                <div class="project-slide" id="slide-dental">
+                  <img src="dental.png" alt="Visual Branding da Clinica Spagnol" class="project-image">
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag tag-pink" data-translate="project_tag_complete">CONCLUÍDO // MARKETING</span>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Painel de Descrições do Projeto -->
+              <div class="project-details-panel">
+                <div class="project-nav-controls">
+                  <button id="btn-prev-project" class="btn-proj-nav">◀ PREV_NODE</button>
+                  <div class="proj-counter font-mono"><span id="curr-proj-index">01</span> / 02</div>
+                  <button id="btn-next-project" class="btn-proj-nav">NEXT_NODE ▶</button>
+                </div>
+                
+                <!-- Descrição Oficina -->
+                <div class="project-text-block active" id="details-workshop">
+                  <h2 class="project-title font-hud" data-translate="proj_title_1">Sistema de Gestão de Peças de Oficina</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Java SE</span>
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">Lógica POO</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_1">Uma ferramenta desktop de alta fidelidade voltada para o controle operacional de inventário e reposição de autopeças. Conta com um banco de dados estruturado em arquivos, algoritmos otimizados de busca rápida de itens, catalogação inteligente de materiais e uma interface tática integrada com estilos HTML5 e CSS3 locais para facilitar o fluxo de trabalho dos mecânicos na oficina.</p>
+                </div>
+                
+                <!-- Descrição Odontologia -->
+                <div class="project-text-block" id="details-dental">
+                  <h2 class="project-title font-hud" data-translate="proj_title_2">Campanha & Identidade Digital - Clinica Odontológica</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">Identidade Visual</span>
+                    <span class="tech-tag">Estratégia Digital</span>
+                    <span class="tech-tag">Marketing</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_2">Criação completa de branding corporativo e materiais de marketing para a Spagnol Odontologia. Focado em restabelecer a consistência e padronização visual da marca nas redes sociais, o projeto envolveu a estruturação de fluxos operacionais de comunicação, paletas cromáticas acolhedoras e modernos designs de cards promocionais que aumentaram em 45% a taxa de engajamento do público com a clínica.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= VISTA 3: CANAL NEURAL GMAIL ================= -->
+      <div id="contact-view" class="view-panel">
+        <div class="contact-form-panel glass-panel">
+          <div class="panel-header">
+            <span class="panel-title-text" data-translate="contact_panel_title">DISPARADOR_DE_TRANSMISSÃO_GMAIL</span>
+            <span class="panel-sub-text" data-translate="contact_panel_sub">LINK DIRETO DE COMUNICAÇÃO DE REDE</span>
+          </div>
+          <div class="panel-body flex-col justify-between">
+            
+            <div class="contact-layout">
+              <div class="contact-form-instructions">
+                <h2 class="font-hud text-neon-cyan" data-translate="contact_welcome">ESTABELECER CONEXÃO DIRECT</h2>
+                <p data-translate="contact_intro">Esta seção envia uma mensagem criptografada formatada em tempo real diretamente para o canal Gmail de Matheus. Preencha as chaves operacionais e envie a transmissão.</p>
+                <div class="transmission-status-box font-mono">
+                  <div><strong>SYS_TARGET:</strong> matheushtms04@gmail.com</div>
+                  <div><strong>CHANNEL:</strong> SECURE_MAILTO_STREAM</div>
+                  <div><strong>TRANSMISSÃO:</strong> <span id="transmission-state" class="text-neon-cyan" data-translate="state_waiting">AGUARDANDO INPUT</span></div>
+                </div>
+              </div>
+
+              <!-- Formulário Gmail -->
+              <form id="gmail-neural-form" class="neural-form flex-col gap-4">
+                <div class="form-group">
+                  <label for="gmail-sender-name" class="font-mono text-neon-pink" data-translate="lbl_name">NOME_RECRUTADOR:</label>
+                  <input type="text" id="gmail-sender-name" required placeholder="Ex: Ana Silva (RH Tech)" data-translate-placeholder="ph_name">
+                </div>
+                
+                <div class="form-group">
+                  <label for="gmail-sender-email" class="font-mono text-neon-pink" data-translate="lbl_email">EMAIL_CONTATO:</label>
+                  <input type="email" id="gmail-sender-email" required placeholder="Ex: recrutador@corporacao.com" data-translate-placeholder="ph_email">
+                </div>
+
+                <div class="form-group">
+                  <label for="gmail-sender-message" class="font-mono text-neon-pink" data-translate="lbl_message">MENSAGEM_CRIPTOGRAFADA:</label>
+                  <textarea id="gmail-sender-message" rows="5" required placeholder="Descreva os termos da contratação, projeto ou convite..." data-translate-placeholder="ph_message"></textarea>
+                </div>
+
+                <button type="submit" id="btn-submit-transmission" class="btn-neural-submit">
+                  <span class="btn-glow-container"></span>
+                  <span class="btn-submit-text" data-translate="btn_send_trans">ENVIAR TRANSMISSÃO NEURAL</span>
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= VISTA 4: CORE TERMINAL VIEW ================= -->
+      <div id="terminal-view" class="view-panel">
+        <div class="terminal-panel glass-panel">
+          <div class="panel-header">
+            <span class="panel-title-text">CORE_TERMINAL // SSH_GUEST_SESSION</span>
+            <span class="panel-sub-text" data-translate="terminal_sub">INTERFACES BASEADAS EM TEXTO</span>
+          </div>
+          <div class="panel-body flex-col justify-between">
+            <div id="terminal-history" class="terminal-scroll-area">
+              <div class="terminal-line-output font-mono" id="terminal-init-msg">
+                <span class="text-neon-cyan">Matheus Neural Core OS v4.0.28 (guest-session)</span><br>
+                <span>Conectando ao núcleo de dados... Conectado!</span><br>
+                <span>Digite <span class="text-neon-pink">help</span> para visualizar comandos disponíveis na inteligência do sistema.</span><br>
+                <span>---------------------------------------------------------</span>
+              </div>
+            </div>
+            
+            <div class="terminal-prompt-area">
+              <span class="terminal-prompt-string font-mono">guest@matheus-network:~$</span>
+              <input type="text" id="terminal-input" class="font-mono" autocomplete="off" placeholder="Digite um comando..." aria-label="Prompt de comandos do terminal" data-translate-placeholder="term_placeholder">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Rodapé Futurista -->
+    <footer id="hud-footer">
+      <div class="footer-left">
+        <span class="footer-indicator-active"></span>
+        <span class="font-mono" id="stream-status" data-translate="footer_link">LINK_STATUS: PERSISTENT_STREAM</span>
+      </div>
+      <div class="footer-center">
+        <span>© 2026 MATHEUS HENRIQUE TAVARES MALTA</span>
+      </div>
+      <div class="footer-right font-mono">
+        <span>GRID_COORD: 31.97.10.46 // BH_BR</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Janela de Dossiê Modal (Aberto por clique nas experiências/timeline) -->
+  <div id="dossier-modal" class="modal-container hidden" role="dialog" aria-modal="true" aria-labelledby="dossier-title">
+    <div class="dossier-card glass-panel">
+      <div class="panel-header">
+        <span id="dossier-title" class="panel-title-text" data-translate="dossier_header">ARQUIVO_DOSSIÊ</span>
+        <button id="close-dossier" class="btn-close-modal" aria-label="Fechar modal">✕ CLOSE</button>
+      </div>
+      <div id="dossier-body" class="panel-body font-mono">
+        <!-- O conteúdo será preenchido dinamicamente via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= VISTA IMPRESSÃO / ELEGANT RESUME VIEW ================= -->
+  <div id="traditional-resume-print">
+    <div class="print-header">
+      <div class="print-header-main">
+        <h1>Matheus Henrique Tavares Malta</h1>
+        <h2 id="print-role" data-translate="print_role">Estudante de Engenharia de Software (4º Período - PUC Minas)</h2>
+      </div>
+      <div class="print-contacts">
+        <div><strong>Email:</strong> matheushtms04@gmail.com</div>
+        <div><strong>Telefone:</strong> (31) 97104-6149</div>
+        <div><strong>LinkedIn:</strong> linkedin.com/in/matheus-malta-a39b66255</div>
+        <div><strong>GitHub:</strong> github.com/matheushtms/matheushtms</div>
+      </div>
+    </div>
+    
+    <div class="print-section">
+      <h3 data-translate="print_sect_summary">Resumo Profissional</h3>
+      <p id="print-summary" data-translate="print_summary">Estudante de Engenharia de Software focado em Desenvolvimento Web (front-end e back-end) e Marketing Digital. Experiência prática na criação de estratégias de comunicação e logística para redes sociais, aliada a uma sólida base acadêmica em linguagens de programação como Java, Python, HTML e CSS. Atuação voltada para a resolução de problemas em equipe e proatividade no desenvolvimento de soluções tecnológicas.</p>
+    </div>
+
+    <div class="print-section">
+      <h3 data-translate="print_sect_skills">Habilidades Técnicas</h3>
+      <ul>
+        <li><strong>Linguagens e Frameworks:</strong> Python, JavaScript, Java, HTML5, CSS.</li>
+        <li id="print-skill-ai" data-translate="print_skill_ai"><strong>Inteligência Artificial:</strong> Algoritmos de Recomendação, Lógica de Programação.</li>
+        <li id="print-skill-design" data-translate="print_skill_design"><strong>Design e Comunicação:</strong> Web Design, Marketing Digital, Identidade Visual.</li>
+        <li id="print-skill-tools" data-translate="print_skill_tools"><strong>Ferramentas e Metodologias:</strong> Metodologias Ágeis (Scrum), Git/GitHub, Integração com APIs, Figma.</li>
+        <li id="print-skill-lang" data-translate="print_skill_lang"><strong>Idiomas:</strong> Inglês (Básico).</li>
+      </ul>
+    </div>
+
+    <div class="print-section">
+      <h3 data-translate="print_sect_exp">Experiência Profissional</h3>
+      <div class="print-exp-item">
+        <div class="print-exp-header">
+          <strong id="print-exp-job-1" data-translate="print_exp_job_1">Estagiário de Marketing e Logística</strong> — Spagnol Odontologia
+          <span class="print-date">Jan 2024 – Ago 2024</span>
+        </div>
+        <ul>
+          <li id="print-exp-task-1-1" data-translate="print_exp_task_1_1">Responsável pelo desenvolvimento e execução de estratégias de marketing para as redes sociais do consultório.</li>
+          <li id="print-exp-task-1-2" data-translate="print_exp_task_1_2">Gestão da logística interna relacionada à presença digital e comunicação com pacientes.</li>
+        </ul>
+      </div>
+
+      <div class="print-exp-item">
+        <div class="print-exp-header">
+          <strong id="print-exp-job-2" data-translate="print_exp_job_2">Desenvolvedor de Sistemas (Projeto Pessoal / Acadêmico)</strong>
+          <span class="print-date" id="print-exp-date-2" data-translate="print_exp_date_2">Projeto Independente</span>
+        </div>
+        <ul>
+          <li id="print-exp-task-2-1" data-translate="print_exp_task_2_1">Desenvolvimento de um Sistema de Gestão de peças de uma oficina utilizando Java, HTML e CSS, otimizando o controle e gestão do fluxo de serviços e materiais da oficina.</li>
+          <li id="print-exp-task-2-2" data-translate="print_exp_task_2_2">Criação de materiais de marketing e identidade visual para Clinica Odontológica, focando na padronização da comunicação digital da marca.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h3 data-translate="print_sect_puc">Projetos Acadêmicos e Extensão</h3>
+      <div class="print-exp-item">
+        <div class="print-exp-header">
+          <strong id="print-exp-job-3" data-translate="print_exp_job_3">Gestão de Comunicação — PUC Minas</strong>
+          <span class="print-date" id="print-exp-date-3" data-translate="print_exp_date_3">Projeto de Extensão</span>
+        </div>
+        <ul>
+          <li id="print-exp-task-3-1" data-translate="print_exp_task_3_1">Atuação ativa na equipe de redes sociais do curso de Engenharia de Software, focando na criação de conteúdo técnico e engajamento da comunidade acadêmica.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="print-section">
+      <h3 data-translate="print_sect_edu">Formação Acadêmica</h3>
+      <div class="print-edu-item">
+        <strong id="print-edu-title" data-translate="print_edu_title">Graduação em Engenharia de Software</strong> — PUC Minas
+        <span class="print-date" id="print-edu-date" data-translate="print_edu_date">Conclusão prevista: segundo semestre de 2028</span>
+      </div>
+      <div class="print-edu-item">
+        <strong id="print-edu-high" data-translate="print_edu_high">Ensino Médio Completo</strong> — Instituto Adventista Brasil Central
+        <span class="print-date" id="print-high-date" data-translate="print_high_date">Concluído em 2022</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

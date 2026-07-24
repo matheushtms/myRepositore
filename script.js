@@ -325,8 +325,8 @@ document.addEventListener("DOMContentLoaded", () => {
       
       profile_title: "CIBER_IDENTIDADE",
       profile_role: "Estudante de Engenharia de Software",
-      profile_period: "4º Período",
-      profile_bio: "Estudante de Engenharia de Software focado no desenvolvimento web (Front-end e Back-end) e Marketing Digital. Experiência prática na criação de estratégias de comunicação e logística de redes sociais, aliada a uma sólida formação técnica em programação (Java, Python, HTML/CSS). Proativo e focado em resolver problemas complexos em equipe através de tecnologia de ponta.",
+      profile_period: "5º Período",
+      profile_bio: "Estudante de Engenharia de Software (PUC Minas, 5º período) focado em desenvolvimento full-stack, do modelo de dados ao deploy. Hoje alia essa formação à experiência prática como responsável pela estrutura de TI e suporte da Rede Decisão, além de projetos reais como um SaaS multi-tenant em piloto com cliente. Incorpora ferramentas de IA agentic (Claude Code) ao ciclo de desenvolvimento, com base prévia em marketing digital e comunicação para redes sociais.",
       
       ai_title: "NÚCLEO_INTELECTO_IA",
       ai_greeting: "Saudações, recrutador. Conectado com sucesso à rede neural de Matheus Malta. Selecione uma diretriz ou envie uma pergunta sobre suas qualificações para que eu processe uma resposta baseada em seus dados.",
@@ -352,6 +352,8 @@ document.addEventListener("DOMContentLoaded", () => {
       
       chronology_title: "CRONOLOGIA_E_HISTÓRICO",
       chronology_sub: "REGISTROS DE EXECUÇÃO DE SISTEMAS",
+      timeline_job_0: "Suporte de TI",
+      timeline_summary_0: "Responsável por toda a estrutura de TI e suporte da rede.",
       timeline_job_1: "Estagiário de Marketing e Logística",
       timeline_summary_1: "Criação de estratégias digitais, gestão de presença online e controle logístico de comunicação com pacientes.",
       timeline_job_2: "Desenvolvedor de Sistemas (Oficina)",
@@ -364,7 +366,7 @@ document.addEventListener("DOMContentLoaded", () => {
       timeline_hint: "Clique para expandir arquivo dossiê",
       timeline_date_2: "Projeto Pessoal / Acadêmico",
       timeline_date_3: "Extensão Acadêmica",
-      timeline_date_4: "Previsão: Dez 2028",
+      timeline_date_4: "Previsão: 1º semestre 2028",
 
       projects_panel_title: "VISUALIZADOR_DE_TELAS_PROJETOS",
       projects_panel_sub: "PROJEÇÕES GRÁFICAS DE SISTEMAS IMPLANTADOS",
@@ -386,6 +388,10 @@ document.addEventListener("DOMContentLoaded", () => {
       proj_desc_5: "Aplicação web educacional para turmas do maternal acompanharem o crescimento de plantas cultivadas na horta escolar, com animações, músicas e o personagem-guia Benny, o Minhoco. Projeto acadêmico em equipe, ainda em desenvolvimento, para a disciplina de Engenharia de Software da PUC Minas.",
       proj_title_6: "Plane Graph Analysis",
       proj_desc_6: "Análise da rede de colaboração do repositório open-source makeplane/plane a partir de issues, pull requests, comentários e reviews, usando grafos direcionados e ponderados implementados do zero — centralidades (PageRank, Betweenness, Closeness), detecção de comunidades e exportação para Gephi/Sigma.js. Projeto em equipe para a disciplina de Teoria de Grafos e Computabilidade; contribuição própria nas classes de grafo, análise e exportação.",
+      proj_title_7: "Agenda Barbearia",
+      proj_desc_7: "SaaS multi-tenant de agendamento pra barbearias e salões, hoje em piloto real com uma barbearia de 3 cadeiras. Painel administrativo pro dono do negócio e página pública de auto-agendamento pro cliente. Next.js + Supabase, com RLS multi-tenant e constraint no banco que impede agendamento duplicado mesmo sob concorrência, além de notificações via WhatsApp Business Cloud API.",
+      proj_title_8: "Brechó Online",
+      proj_desc_8: "E-commerce/catálogo de roupas usadas, desenvolvido para um cliente real, com a mesma stack do Agenda Barbearia (Next.js + Supabase).",
 
       contact_panel_title: "DISPARADOR_DE_TRANSMISSÃO_GMAIL",
       contact_panel_sub: "LINK DIRETO DE COMUNICAÇÃO DE REDE",
@@ -406,15 +412,18 @@ document.addEventListener("DOMContentLoaded", () => {
       dossier_header: "ARQUIVO_DOSSIÊ",
 
       // Impressão
-      print_role: "Estaurante de Engenharia de Software (4º Período - PUC Minas)",
+      print_role: "Estudante de Engenharia de Software (5º Período - PUC Minas)",
       print_sect_summary: "Resumo Profissional",
-      print_summary: "Estudante de Engenharia de Software focado em Desenvolvimento Web (front-end e back-end) e Marketing Digital. Experiência prática na criação de estratégias de comunicação e logística para redes sociais, aliada a uma sólida base acadêmica em linguagens de programação como Java, Python, HTML e CSS. Atuação voltada para a resolução de problemas em equipe e proatividade no desenvolvimento de soluções tecnológicas.",
+      print_summary: "Estudante de Engenharia de Software (PUC Minas, 5º período) com experiência prática no desenvolvimento full-stack de produtos reais — do modelo de dados ao deploy —, incluindo um SaaS multi-tenant hoje em piloto com cliente real. Atua atualmente como responsável pela estrutura de TI e suporte da Rede Decisão, aliando essa vivência de infraestrutura ao desenvolvimento com JavaScript/TypeScript, Python e Java e ao uso de ferramentas de IA agentic (Claude Code). Base prévia em marketing digital e comunicação para redes sociais.",
       print_sect_skills: "Habilidades Técnicas",
       print_skill_ai: "Inteligência Artificial: Algoritmos de Recomendação, Lógica de Programação.",
       print_skill_design: "Design e Comunicação: Web Design, Marketing Digital, Identidade Visual.",
       print_skill_tools: "Ferramentas e Metodologias: Metodologias Ágeis (Scrum), Git/GitHub, Integração com APIs, Figma.",
       print_skill_lang: "Idiomas: Inglês (Básico).",
       print_sect_exp: "Experiência Profissional",
+      print_exp_job_0: "Suporte de TI — Rede Decisão",
+      print_exp_date_0: "Mar 2026 – Atual",
+      print_exp_task_0_1: "Responsável por toda a estrutura de TI e suporte da rede.",
       print_exp_job_1: "Estagiário de Marketing e Logística — Spagnol Odontologia",
       print_exp_task_1_1: "Responsável pelo desenvolvimento e execução de estratégias de marketing para as redes sociais do consultório.",
       print_exp_task_1_2: "Gestão da logística interna relacionada à presença digital e comunicação com pacientes.",
@@ -428,7 +437,7 @@ document.addEventListener("DOMContentLoaded", () => {
       print_exp_task_3_1: "Atuação ativa na equipe de redes sociais do curso de Engenharia de Software, focando na criação de conteúdo técnico e engajamento da comunidade acadêmica.",
       print_sect_edu: "Formação Acadêmica",
       print_edu_title: "Graduação em Engenharia de Software — PUC Minas",
-      print_edu_date: "Conclusão prevista: segundo semestre de 2028",
+      print_edu_date: "Conclusão prevista: primeiro semestre de 2028",
       print_edu_high: "Ensino Médio Completo — Instituto Adventista Brasil Central",
       print_high_date: "Concluído em 2022"
     },
@@ -445,8 +454,8 @@ document.addEventListener("DOMContentLoaded", () => {
       
       profile_title: "CYBER_IDENTITY",
       profile_role: "Software Engineering Student",
-      profile_period: "4th Period",
-      profile_bio: "Software Engineering student focused on Web Development (Front-end and Back-end) and Digital Marketing. Practical experience in creating social media communication and logistics strategies, combined with a solid academic foundation in languages like Java, Python, HTML/CSS. Proactive and focused on solving complex problems in team environments through state-of-the-art tech.",
+      profile_period: "5th Period",
+      profile_bio: "Software Engineering student (PUC Minas, 5th semester) focused on full-stack development, from data model to deploy. He currently pairs that with hands-on experience as the person responsible for the IT structure and support of Rede Decisão, plus real projects like a multi-tenant SaaS in pilot with a real client. He brings agentic AI tools (Claude Code) into his development cycle, with a prior background in digital marketing and social media communication.",
       
       ai_title: "AI_INTELLECT_CORE",
       ai_greeting: "Greetings, recruiter. Successfully established neural link with Matheus Malta. Select a protocol or type a custom query below to process data.",
@@ -472,6 +481,8 @@ document.addEventListener("DOMContentLoaded", () => {
       
       chronology_title: "CHRONOLOGY_RUN_LOGS",
       chronology_sub: "SYSTEM EXECUTION REGISTERS",
+      timeline_job_0: "IT Support",
+      timeline_summary_0: "Responsible for the entire IT structure and support of the network.",
       timeline_job_1: "Marketing and Logistics Intern",
       timeline_summary_1: "Development of digital marketing strategies, visual branding design, and internal client relations logistics.",
       timeline_job_2: "Systems Developer (Car Workshop)",
@@ -484,7 +495,7 @@ document.addEventListener("DOMContentLoaded", () => {
       timeline_hint: "Click to expand secure dossier file",
       timeline_date_2: "Personal / Academic Project",
       timeline_date_3: "Academic Extension",
-      timeline_date_4: "Expected: Dec 2028",
+      timeline_date_4: "Expected: 1st half 2028",
 
       projects_panel_title: "PROJECTS_SCREEN_VIEWER",
       projects_panel_sub: "GRAPHICAL DISPLAY OF DEPLOYED SYSTEMS",
@@ -506,6 +517,10 @@ document.addEventListener("DOMContentLoaded", () => {
       proj_desc_5: "An educational web app for preschool classes to track the growth of plants in the school garden, with animations, music, and the guide character Benny the Worm. Team academic project, still in development, for PUC Minas' Software Engineering course.",
       proj_title_6: "Plane Graph Analysis",
       proj_desc_6: "Analysis of the collaboration network in the open-source makeplane/plane repository from issues, pull requests, comments, and reviews, using directed weighted graphs implemented from scratch — centrality metrics (PageRank, Betweenness, Closeness), community detection, and export to Gephi/Sigma.js. Team project for the Graph Theory and Computability course; own contribution covered the graph classes, analysis, and export.",
+      proj_title_7: "Agenda Barbearia",
+      proj_desc_7: "Multi-tenant booking SaaS for barbershops and salons, currently in real pilot with a 3-chair barbershop. Admin panel for the business owner and a public self-booking page for clients. Next.js + Supabase, with multi-tenant RLS and a database constraint that prevents double-booking even under concurrency, plus notifications via WhatsApp Business Cloud API.",
+      proj_title_8: "Brechó Online",
+      proj_desc_8: "Second-hand clothing e-commerce/catalog, built for a real client, with the same stack as Agenda Barbearia (Next.js + Supabase).",
 
       contact_panel_title: "GMAIL_NEURAL_LINK_TRANSMITTER",
       contact_panel_sub: "DIRECT DIRECT_CONNECT COMMS TUNNEL",
@@ -526,15 +541,18 @@ document.addEventListener("DOMContentLoaded", () => {
       dossier_header: "DOSSIER_FILE",
 
       // Impressão EN
-      print_role: "Software Engineering Student (4th Period - PUC Minas)",
+      print_role: "Software Engineering Student (5th Period - PUC Minas)",
       print_sect_summary: "Professional Summary",
-      print_summary: "Software Engineering student focused on Web Development (front-end and back-end) and Digital Marketing. Practical experience in creating social media communication and logistics strategies, combined with a solid academic foundation in languages like Java, Python, HTML, and CSS. Dedicated team player proactive in building highly performant software products.",
+      print_summary: "Software Engineering student (PUC Minas, 5th semester) with hands-on experience building real full-stack products — from data model to deploy —, including a multi-tenant SaaS currently in pilot with a real client. Currently responsible for the IT structure and support of Rede Decisão, pairing that infrastructure experience with development in JavaScript/TypeScript, Python and Java and the use of agentic AI tools (Claude Code). Prior background in digital marketing and social media communication.",
       print_sect_skills: "Technical Skills",
       print_skill_ai: "Artificial Intelligence: Recommendation Algorithms, Programming Logic.",
       print_skill_design: "Design & Communications: Web Design, Digital Marketing, Visual Identity.",
       print_skill_tools: "Tools & Methods: Agile Frameworks (Scrum), Git/GitHub, API Integration, Figma.",
       print_skill_lang: "Languages: English (Basic).",
       print_sect_exp: "Work Experience",
+      print_exp_job_0: "IT Support — Rede Decisão",
+      print_exp_date_0: "Mar 2026 – Present",
+      print_exp_task_0_1: "Responsible for the entire IT structure and support of the network.",
       print_exp_job_1: "Marketing and Logistics Intern — Spagnol Odontology",
       print_exp_task_1_1: "Designed and executed creative marketing assets and visual campaigns for local clinic media pipelines.",
       print_exp_task_1_2: "Coordinated internal patient onboarding log streams and digital customer support funnels.",
@@ -548,7 +566,7 @@ document.addEventListener("DOMContentLoaded", () => {
       print_exp_task_3_1: "Produced high-quality educational publications on technical computer logic, promoting student community engagement.",
       print_sect_edu: "Academic Background",
       print_edu_title: "B.S. in Software Engineering — PUC Minas",
-      print_edu_date: "Expected graduation: second semester of 2028",
+      print_edu_date: "Expected graduation: first semester of 2028",
       print_edu_high: "High School Diploma — Instituto Adventista Brasil Central",
       print_high_date: "Completed in 2022"
     }
@@ -627,6 +645,18 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------------------
   const dossiers = {
     PT: {
+      "exp-rede-decisao": {
+        title: "REDE_DECISÃO // DOSSIÊ_SUPORTE_TI",
+        role: "Suporte de TI",
+        org: "Rede Decisão",
+        period: "Março 2026 - Atual",
+        status: "EM ANDAMENTO",
+        desc: "Responsável por toda a estrutura de TI e suporte da rede, em Belo Horizonte.",
+        tasks: [
+          "Gestão e manutenção de toda a infraestrutura de TI da rede.",
+          "Suporte técnico contínuo aos usuários e sistemas internos."
+        ]
+      },
       "exp-marketing": {
         title: "SPAGNOL ODONTOLOGIA // DOSSIÊ_ESTÁGIO",
         role: "Estagiário de Marketing e Logística",
@@ -670,7 +700,7 @@ document.addEventListener("DOMContentLoaded", () => {
         title: "PUC_MINAS // ENGENHARIA_SOFTWARE",
         role: "Graduação de Alta Performance",
         org: "Pontifícia Universidade Católica de Minas Gerais (Belo Horizonte)",
-        period: "Previsão de Formatura: Dezembro 2028 (4º período atual)",
+        period: "Previsão de Formatura: 1º semestre de 2028 (5º período atual)",
         status: "PROGRESSÃO APROVADA",
         desc: "Bacharelado intensivo voltado para Engenharia de Requisitos, Arquitetura de Computadores, Estrutura de Dados, Programação Orientada a Objetos e Métodos Ágeis.",
         tasks: [
@@ -681,6 +711,18 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     },
     EN: {
+      "exp-rede-decisao": {
+        title: "REDE_DECISÃO // IT_SUPPORT_DOSSIER",
+        role: "IT Support",
+        org: "Rede Decisão",
+        period: "March 2026 - Present",
+        status: "IN PROGRESS",
+        desc: "Responsible for the entire IT structure and support of the network, in Belo Horizonte.",
+        tasks: [
+          "Management and maintenance of the network's entire IT infrastructure.",
+          "Ongoing technical support for internal users and systems."
+        ]
+      },
       "exp-marketing": {
         title: "SPAGNOL ODONTOLOGY // INTERNSHIP_DOSSIER",
         role: "Marketing and Logistics Intern",
@@ -724,7 +766,7 @@ document.addEventListener("DOMContentLoaded", () => {
         title: "PUC_MINAS // SOFTWARE_ENGINEERING",
         role: "High-Performance Undergrad",
         org: "Pontifical Catholic University of Minas Gerais (Belo Horizonte)",
-        period: "Graduation Expected: December 2028 (Currently in 4th Period)",
+        period: "Graduation Expected: 1st half of 2028 (Currently in 5th Period)",
         status: "APPROVED PROGRESSION",
         desc: "Intensive B.S. degree focusing on Algorithms, Data Structures, OOP, Software Architectures, and Agile methodologies.",
         tasks: [
@@ -1063,6 +1105,9 @@ MATRIZ DE MÓDULOS DE HARDWARE TÉCNICOS:
       experience: () => `
 CRONOLOGIA DE EXECUÇÃO DE SISTEMAS (HISTÓRICO):
 --------------------------------------------------------------------------------
+0. <span class="text-neon-cyan">Rede Decisão</span> | Suporte de TI (Mar 2026 - Atual)
+   - Responsável por toda a estrutura de TI e suporte da rede.
+--------------------------------------------------------------------------------
 1. <span class="text-neon-cyan">Spagnol Odontologia</span> | Estagiário de Marketing e Logística (Jan 2024 - Ago 2024)
    - Execução de marketing estratégico, layout visual nas redes sociais.
    - Gestão operacional de logística de comunicação rápida pré/pós consulta.
@@ -1077,8 +1122,8 @@ CRONOLOGIA DE EXECUÇÃO DE SISTEMAS (HISTÓRICO):
 `,
       education: () => `
 BASE ACADÊMICA ENTRADA / SAÍDA:
-  » <span class="text-neon-cyan">Graduação em Engenharia de Software</span> (Previsão: Dezembro 2028)
-    Pontifícia Universidade Católica de Minas Gerais (PUC Minas) - 4º Período Atual.
+  » <span class="text-neon-cyan">Graduação em Engenharia de Software</span> (Previsão: 1º semestre de 2028)
+    Pontifícia Universidade Católica de Minas Gerais (PUC Minas) - 5º Período Atual.
   » <span class="text-white">Ensino Médio Completo</span> (Conclusão: 2022)
     Instituto Adventista Brasil Central.
 `,
@@ -1156,6 +1201,9 @@ HARDWARE SKILL MATRIX CHIPS:
       experience: () => `
 CHRONOLOGICAL RUN MODULES (HISTORY):
 --------------------------------------------------------------------------------
+0. <span class="text-neon-cyan">Rede Decisão</span> | IT Support (Mar 2026 - Present)
+   - Responsible for the entire IT structure and support of the network.
+--------------------------------------------------------------------------------
 1. <span class="text-neon-cyan">Spagnol Odontology</span> | Marketing & Logistics Intern (Jan 2024 - Aug 2024)
    - Created digital visual strategies, uniform network brand guidelines.
    - Administered customer operations, onboarding pipelines, support.
@@ -1170,8 +1218,8 @@ CHRONOLOGICAL RUN MODULES (HISTORY):
 `,
       education: () => `
 ACADEMIC CERTIFICATIONS:
-  » <span class="text-neon-cyan">B.S. in Software Engineering</span> (Expected Graduation: December 2028)
-    Pontifical Catholic University of Minas Gerais - Currently in 4th Period.
+  » <span class="text-neon-cyan">B.S. in Software Engineering</span> (Expected Graduation: 1st half of 2028)
+    Pontifical Catholic University of Minas Gerais - Currently in 5th Period.
   » <span class="text-white">High School Degree</span> (Concluded: 2022)
     Adventist High School Center.
 `,

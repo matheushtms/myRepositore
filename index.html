@@ -116,14 +116,14 @@
                     <h1 class="profile-name">Matheus Henrique Tavares Malta</h1>
                     <div class="profile-role" data-translate="profile_role">Estudante de Engenharia de Software</div>
                     <div class="profile-meta">
-                      <span class="meta-tag" data-translate="profile_period">4º Período</span>
+                      <span class="meta-tag" data-translate="profile_period">5º Período</span>
                       <span class="meta-tag">PUC Minas</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="profile-bio">
-                  <p data-translate="profile_bio">Estudante de Engenharia de Software focado no desenvolvimento web (Front-end e Back-end) e Marketing Digital. Experiência prática na criação de estratégias de comunicação e logística de redes sociais, aliada a uma sólida formação técnica em programação (Java, Python, HTML/CSS). Proativo e focado em resolver problemas complexos em equipe através de tecnologia de ponta.</p>
+                  <p data-translate="profile_bio">Estudante de Engenharia de Software (PUC Minas, 5º período) focado em desenvolvimento full-stack, do modelo de dados ao deploy. Hoje alia essa formação à experiência prática como responsável pela estrutura de TI e suporte da Rede Decisão, além de projetos reais como um SaaS multi-tenant em piloto com cliente. Incorpora ferramentas de IA agentic (Claude Code) ao ciclo de desenvolvimento, com base prévia em marketing digital e comunicação para redes sociais.</p>
                 </div>
 
                 <div class="contact-links-grid">
@@ -324,10 +324,22 @@
               <div class="panel-body">
                 <div class="timeline-container">
                   <div class="timeline-line"></div>
-                  
+
+                  <!-- Experiência 0 (Atual) -->
+                  <div class="timeline-item clickable" data-dossier="exp-rede-decisao">
+                    <div class="timeline-badge active"></div>
+                    <div class="timeline-date">Mar 2026 - Atual</div>
+                    <div class="timeline-content">
+                      <h3 class="timeline-job" data-translate="timeline_job_0">Suporte de TI</h3>
+                      <div class="timeline-org">Rede Decisão</div>
+                      <p class="timeline-summary" data-translate="timeline_summary_0">Responsável por toda a estrutura de TI e suporte da rede.</p>
+                      <span class="dossier-hint" data-translate="timeline_hint">Clique para expandir arquivo dossiê</span>
+                    </div>
+                  </div>
+
                   <!-- Experiência 1 -->
                   <div class="timeline-item clickable" data-dossier="exp-marketing">
-                    <div class="timeline-badge active"></div>
+                    <div class="timeline-badge"></div>
                     <div class="timeline-date">Jan 2024 - Ago 2024</div>
                     <div class="timeline-content">
                       <h3 class="timeline-job" data-translate="timeline_job_1">Estagiário de Marketing e Logística</h3>
@@ -364,7 +376,7 @@
                   <!-- Formação Acadêmica -->
                   <div class="timeline-item clickable" data-dossier="edu-software">
                     <div class="timeline-badge edu"></div>
-                    <div class="timeline-date" data-translate="timeline_date_4">Previsão: Dez 2028</div>
+                    <div class="timeline-date" data-translate="timeline_date_4">Previsão: 1º semestre 2028</div>
                     <div class="timeline-content">
                       <h3 class="timeline-job" data-translate="timeline_job_4">Graduação em Engenharia de Software</h3>
                       <div class="timeline-org">PUC Minas</div>
@@ -456,13 +468,35 @@
                     <span class="project-status-tag tag-pink" data-translate="project_tag_complete_collab">CONCLUÍDO // COLABORAÇÃO</span>
                   </div>
                 </div>
+
+                <!-- Slide 7: Agenda Barbearia -->
+                <div class="project-slide" id="slide-agenda-barbearia">
+                  <div class="project-media-placeholder">
+                    <span class="placeholder-icon">◈</span>
+                    <span class="placeholder-label" data-translate="project_no_preview">PREVIEW INDISPONÍVEL</span>
+                  </div>
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag" data-translate="project_tag_active">IMPLANTADO // v1.2.0</span>
+                  </div>
+                </div>
+
+                <!-- Slide 8: Brechó Online -->
+                <div class="project-slide" id="slide-brecho-online">
+                  <div class="project-media-placeholder">
+                    <span class="placeholder-icon">◈</span>
+                    <span class="placeholder-label" data-translate="project_no_preview">PREVIEW INDISPONÍVEL</span>
+                  </div>
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag" data-translate="project_tag_active">IMPLANTADO // v1.2.0</span>
+                  </div>
+                </div>
               </div>
 
               <!-- Painel de Descrições do Projeto -->
               <div class="project-details-panel">
                 <div class="project-nav-controls">
                   <button id="btn-prev-project" class="btn-proj-nav">◀ PREV_NODE</button>
-                  <div class="proj-counter font-mono"><span id="curr-proj-index">01</span> / 06</div>
+                  <div class="proj-counter font-mono"><span id="curr-proj-index">01</span> / 08</div>
                   <button id="btn-next-project" class="btn-proj-nav">NEXT_NODE ▶</button>
                 </div>
                 
@@ -543,6 +577,28 @@
                   </div>
                   <p class="project-desc" data-translate="proj_desc_6">Análise da rede de colaboração do repositório open-source makeplane/plane a partir de issues, pull requests, comentários e reviews, usando grafos direcionados e ponderados implementados do zero — centralidades (PageRank, Betweenness, Closeness), detecção de comunidades e exportação para Gephi/Sigma.js. Projeto em equipe para a disciplina de Teoria de Grafos e Computabilidade; contribuição própria nas classes de grafo, análise e exportação.</p>
                   <div class="project-repo-link"><a href="https://github.com/bernardocdm/plane-graph-analysis" target="_blank">// repositório ↗</a></div>
+                </div>
+
+                <!-- Descrição Agenda Barbearia -->
+                <div class="project-text-block" id="details-agenda-barbearia">
+                  <h2 class="project-title font-hud" data-translate="proj_title_7">Agenda Barbearia</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Supabase</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">WhatsApp API</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_7">SaaS multi-tenant de agendamento pra barbearias e salões, hoje em piloto real com uma barbearia de 3 cadeiras. Painel administrativo pro dono do negócio e página pública de auto-agendamento pro cliente. Next.js + Supabase, com RLS multi-tenant e constraint no banco que impede agendamento duplicado mesmo sob concorrência, além de notificações via WhatsApp Business Cloud API.</p>
+                </div>
+
+                <!-- Descrição Brechó Online -->
+                <div class="project-text-block" id="details-brecho-online">
+                  <h2 class="project-title font-hud" data-translate="proj_title_8">Brechó Online</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Supabase</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_8">E-commerce/catálogo de roupas usadas, desenvolvido para um cliente real, com a mesma stack do Agenda Barbearia (Next.js + Supabase).</p>
                 </div>
               </div>
 
@@ -661,7 +717,7 @@
     <div class="print-header">
       <div class="print-header-main">
         <h1>Matheus Henrique Tavares Malta</h1>
-        <h2 id="print-role" data-translate="print_role">Estudante de Engenharia de Software (4º Período - PUC Minas)</h2>
+        <h2 id="print-role" data-translate="print_role">Estudante de Engenharia de Software (5º Período - PUC Minas)</h2>
       </div>
       <div class="print-contacts">
         <div><strong>Email:</strong> matheushtms04@gmail.com</div>
@@ -673,7 +729,7 @@
     
     <div class="print-section">
       <h3 data-translate="print_sect_summary">Resumo Profissional</h3>
-      <p id="print-summary" data-translate="print_summary">Estudante de Engenharia de Software focado em Desenvolvimento Web (front-end e back-end) e Marketing Digital. Experiência prática na criação de estratégias de comunicação e logística para redes sociais, aliada a uma sólida base acadêmica em linguagens de programação como Java, Python, HTML e CSS. Atuação voltada para a resolução de problemas em equipe e proatividade no desenvolvimento de soluções tecnológicas.</p>
+      <p id="print-summary" data-translate="print_summary">Estudante de Engenharia de Software (PUC Minas, 5º período) com experiência prática no desenvolvimento full-stack de produtos reais — do modelo de dados ao deploy —, incluindo um SaaS multi-tenant hoje em piloto com cliente real. Atua atualmente como responsável pela estrutura de TI e suporte da Rede Decisão, aliando essa vivência de infraestrutura ao desenvolvimento com JavaScript/TypeScript, Python e Java e ao uso de ferramentas de IA agentic (Claude Code). Base prévia em marketing digital e comunicação para redes sociais.</p>
     </div>
 
     <div class="print-section">
@@ -689,6 +745,16 @@
 
     <div class="print-section">
       <h3 data-translate="print_sect_exp">Experiência Profissional</h3>
+      <div class="print-exp-item">
+        <div class="print-exp-header">
+          <strong id="print-exp-job-0" data-translate="print_exp_job_0">Suporte de TI — Rede Decisão</strong>
+          <span class="print-date" id="print-exp-date-0" data-translate="print_exp_date_0">Mar 2026 – Atual</span>
+        </div>
+        <ul>
+          <li id="print-exp-task-0-1" data-translate="print_exp_task_0_1">Responsável por toda a estrutura de TI e suporte da rede.</li>
+        </ul>
+      </div>
+
       <div class="print-exp-item">
         <div class="print-exp-header">
           <strong id="print-exp-job-1" data-translate="print_exp_job_1">Estagiário de Marketing e Logística</strong> — Spagnol Odontologia
@@ -729,7 +795,7 @@
       <h3 data-translate="print_sect_edu">Formação Acadêmica</h3>
       <div class="print-edu-item">
         <strong id="print-edu-title" data-translate="print_edu_title">Graduação em Engenharia de Software</strong> — PUC Minas
-        <span class="print-date" id="print-edu-date" data-translate="print_edu_date">Conclusão prevista: segundo semestre de 2028</span>
+        <span class="print-date" id="print-edu-date" data-translate="print_edu_date">Conclusão prevista: primeiro semestre de 2028</span>
       </div>
       <div class="print-edu-item">
         <strong id="print-edu-high" data-translate="print_edu_high">Ensino Médio Completo</strong> — Instituto Adventista Brasil Central

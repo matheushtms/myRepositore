@@ -326,7 +326,7 @@ document.addEventListener("DOMContentLoaded", () => {
       profile_title: "CIBER_IDENTIDADE",
       profile_role: "Estudante de Engenharia de Software",
       profile_period: "5º Período",
-      profile_bio: "Estudante de Engenharia de Software (PUC Minas, 5º período) focado em desenvolvimento full-stack, do modelo de dados ao deploy. Hoje alia essa formação à experiência prática como responsável pela estrutura de TI e suporte da Rede Decisão, além de projetos reais como um SaaS multi-tenant em piloto com cliente. Incorpora ferramentas de IA agentic (Claude Code) ao ciclo de desenvolvimento, com base prévia em marketing digital e comunicação para redes sociais.",
+      profile_bio: "Estudante de Engenharia de Software (PUC Minas, 5º período) e sócio da Café Labs, focado em desenvolvimento full-stack e mobile, do modelo de dados ao deploy. Atua como responsável pela estrutura de TI e pelo suporte da escola Rede Decisão (BH) e entrega produtos reais — de um SaaS multi-tenant em piloto com cliente a apps Flutter e sistemas de gestão. Base prévia em marketing digital e comunicação para redes sociais.",
       
       ai_title: "NÚCLEO_INTELECTO_IA",
       ai_greeting: "Saudações, recrutador. Conectado com sucesso à rede neural de Matheus Malta. Selecione uma diretriz ou envie uma pergunta sobre suas qualificações para que eu processe uma resposta baseada em seus dados.",
@@ -353,7 +353,7 @@ document.addEventListener("DOMContentLoaded", () => {
       chronology_title: "CRONOLOGIA_E_HISTÓRICO",
       chronology_sub: "REGISTROS DE EXECUÇÃO DE SISTEMAS",
       timeline_job_0: "Suporte de TI",
-      timeline_summary_0: "Responsável por toda a estrutura de TI e suporte da rede.",
+      timeline_summary_0: "Responsável pela estrutura de TI da escola: infraestrutura de rede, equipamentos e sistemas, além do suporte técnico contínuo aos usuários.",
       timeline_job_1: "Estagiário de Marketing e Logística",
       timeline_summary_1: "Criação de estratégias digitais, gestão de presença online e controle logístico de comunicação com pacientes.",
       timeline_job_2: "Desenvolvedor de Sistemas (Oficina)",
@@ -392,6 +392,22 @@ document.addEventListener("DOMContentLoaded", () => {
       proj_desc_7: "SaaS multi-tenant de agendamento pra barbearias e salões, hoje em piloto real com uma barbearia de 3 cadeiras. Painel administrativo pro dono do negócio e página pública de auto-agendamento pro cliente. Next.js + Supabase, com RLS multi-tenant e constraint no banco que impede agendamento duplicado mesmo sob concorrência, além de notificações via WhatsApp Business Cloud API.",
       proj_title_8: "Brechó Online",
       proj_desc_8: "E-commerce/catálogo de roupas usadas, desenvolvido para um cliente real, com a mesma stack do Agenda Barbearia (Next.js + Supabase).",
+      timeline_job_cl: "Sócio e Desenvolvedor",
+      timeline_summary_cl: "Sócio de empresa de software: desenvolvimento full-stack e mobile de produtos próprios e de clientes (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).",
+      print_exp_job_cl: "Sócio e Desenvolvedor — Café Labs",
+      print_exp_date_cl: "Jul 2026 – Atual",
+      print_exp_task_cl_1: "Sócio de empresa de software: desenvolvimento full-stack e mobile de produtos próprios e de clientes (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).",
+      project_tag_cafelabs: "CAFÉ LABS // PRODUTO",
+      proj_title_9: "Box+ — Gestão de Oficina Mecânica",
+      proj_desc_9: "Sistema de gestão para uma oficina mecânica real (Café Labs): agendamento, quadro de etapas do carro, histórico de serviços com peças usadas, estoque, manutenção preventiva, faturamento e portal do cliente com notificação quando o carro fica pronto. Monorepo com API Node/TypeScript (Fastify + PostgreSQL), painel web em Next.js e apps Flutter.",
+      proj_title_10: "Café Labs Admin",
+      proj_desc_10: "Hub de gestão interna da Café Labs: clientes e financeiro da empresa em um só sistema. SPA em React + Vite + TypeScript sobre Firebase (Auth com Google, Firestore e Security Rules), com PDF de leads e regras de acesso por usuário. Em produção, usado no dia a dia da empresa.",
+      proj_title_11: "Dindin — Finanças por Envelopes",
+      proj_desc_11: "App de finanças pessoais organizado em \"caixinhas\" (envelopes): a receita entra como saldo e é alocada em caixinhas de gasto (com limite mensal) ou de poupança (com meta), com transferência entre elas. Flutter multiplataforma (Web, Android e Windows) com Firebase, interface em português e inglês. Landing em dindin.cafelabs.net.",
+      proj_title_12: "Laudo — App de Vistorias",
+      proj_desc_12: "App Flutter (mobile + web) de vistorias de obra/imóvel para uma arquiteta: ela narra o que vê por item/ambiente e o app transcreve a voz 100% no dispositivo, anexa fotos e gera o laudo em PDF para o cliente. Funciona offline em campo e sincroniza quando a conexão volta.",
+      proj_title_13: "Patotive",
+      proj_desc_13: "Diretório e operação de grupos exclusivos de desconto no WhatsApp, organizados por categoria de produto (v1: esportes e livros). Next.js (web + PWA) com Firebase (Auth, Firestore, Hosting), no ar em patotive.vercel.app, com integração a marketplace de afiliados em andamento.",
 
       contact_panel_title: "DISPARADOR_DE_TRANSMISSÃO_GMAIL",
       contact_panel_sub: "LINK DIRETO DE COMUNICAÇÃO DE REDE",
@@ -414,16 +430,16 @@ document.addEventListener("DOMContentLoaded", () => {
       // Impressão
       print_role: "Estudante de Engenharia de Software (5º Período - PUC Minas)",
       print_sect_summary: "Resumo Profissional",
-      print_summary: "Estudante de Engenharia de Software (PUC Minas, 5º período) com experiência prática no desenvolvimento full-stack de produtos reais — do modelo de dados ao deploy —, incluindo um SaaS multi-tenant hoje em piloto com cliente real. Atua atualmente como responsável pela estrutura de TI e suporte da Rede Decisão, aliando essa vivência de infraestrutura ao desenvolvimento com JavaScript/TypeScript, Python e Java e ao uso de ferramentas de IA agentic (Claude Code). Base prévia em marketing digital e comunicação para redes sociais.",
+      print_summary: "Estudante de Engenharia de Software (PUC Minas, 5º período) e sócio da Café Labs, focado em desenvolvimento full-stack e mobile, do modelo de dados ao deploy. Atua como responsável pela estrutura de TI e pelo suporte da escola Rede Decisão (BH) e entrega produtos reais — de um SaaS multi-tenant em piloto com cliente a apps Flutter e sistemas de gestão. Base prévia em marketing digital e comunicação para redes sociais.",
       print_sect_skills: "Habilidades Técnicas",
       print_skill_ai: "Inteligência Artificial: Algoritmos de Recomendação, Lógica de Programação.",
       print_skill_design: "Design e Comunicação: Web Design, Marketing Digital, Identidade Visual.",
       print_skill_tools: "Ferramentas e Metodologias: Metodologias Ágeis (Scrum), Git/GitHub, Integração com APIs, Figma.",
       print_skill_lang: "Idiomas: Inglês (Básico).",
       print_sect_exp: "Experiência Profissional",
-      print_exp_job_0: "Suporte de TI — Rede Decisão",
+      print_exp_job_0: "Suporte de TI — Escola Rede Decisão",
       print_exp_date_0: "Mar 2026 – Atual",
-      print_exp_task_0_1: "Responsável por toda a estrutura de TI e suporte da rede.",
+      print_exp_task_0_1: "Responsável pela estrutura de TI da escola: infraestrutura de rede, equipamentos e sistemas, além do suporte técnico contínuo aos usuários.",
       print_exp_job_1: "Estagiário de Marketing e Logística — Spagnol Odontologia",
       print_exp_task_1_1: "Responsável pelo desenvolvimento e execução de estratégias de marketing para as redes sociais do consultório.",
       print_exp_task_1_2: "Gestão da logística interna relacionada à presença digital e comunicação com pacientes.",
@@ -455,7 +471,7 @@ document.addEventListener("DOMContentLoaded", () => {
       profile_title: "CYBER_IDENTITY",
       profile_role: "Software Engineering Student",
       profile_period: "5th Period",
-      profile_bio: "Software Engineering student (PUC Minas, 5th semester) focused on full-stack development, from data model to deploy. He currently pairs that with hands-on experience as the person responsible for the IT structure and support of Rede Decisão, plus real projects like a multi-tenant SaaS in pilot with a real client. He brings agentic AI tools (Claude Code) into his development cycle, with a prior background in digital marketing and social media communication.",
+      profile_bio: "Software Engineering student (PUC Minas, 5th semester) and partner at Café Labs, focused on full-stack and mobile development, from data model to deploy. He is responsible for the IT structure and support of the Rede Decisão school (Belo Horizonte) and ships real products — from a multi-tenant SaaS in pilot with a client to Flutter apps and management systems. With a prior background in digital marketing and social media communication.",
       
       ai_title: "AI_INTELLECT_CORE",
       ai_greeting: "Greetings, recruiter. Successfully established neural link with Matheus Malta. Select a protocol or type a custom query below to process data.",
@@ -482,7 +498,7 @@ document.addEventListener("DOMContentLoaded", () => {
       chronology_title: "CHRONOLOGY_RUN_LOGS",
       chronology_sub: "SYSTEM EXECUTION REGISTERS",
       timeline_job_0: "IT Support",
-      timeline_summary_0: "Responsible for the entire IT structure and support of the network.",
+      timeline_summary_0: "Responsible for the school's IT structure: network infrastructure, equipment and systems, plus ongoing technical support for users.",
       timeline_job_1: "Marketing and Logistics Intern",
       timeline_summary_1: "Development of digital marketing strategies, visual branding design, and internal client relations logistics.",
       timeline_job_2: "Systems Developer (Car Workshop)",
@@ -521,6 +537,22 @@ document.addEventListener("DOMContentLoaded", () => {
       proj_desc_7: "Multi-tenant booking SaaS for barbershops and salons, currently in real pilot with a 3-chair barbershop. Admin panel for the business owner and a public self-booking page for clients. Next.js + Supabase, with multi-tenant RLS and a database constraint that prevents double-booking even under concurrency, plus notifications via WhatsApp Business Cloud API.",
       proj_title_8: "Brechó Online",
       proj_desc_8: "Second-hand clothing e-commerce/catalog, built for a real client, with the same stack as Agenda Barbearia (Next.js + Supabase).",
+      timeline_job_cl: "Partner and Developer",
+      timeline_summary_cl: "Partner at a software company: full-stack and mobile development of in-house and client products (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).",
+      print_exp_job_cl: "Partner and Developer — Café Labs",
+      print_exp_date_cl: "Jul 2026 – Present",
+      print_exp_task_cl_1: "Partner at a software company: full-stack and mobile development of in-house and client products (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).",
+      project_tag_cafelabs: "CAFÉ LABS // PRODUCT",
+      proj_title_9: "Box+ — Gestão de Oficina Mecânica",
+      proj_desc_9: "Management system for a real auto repair shop (Café Labs): scheduling, car-stage board, service history with parts used, inventory, preventive maintenance, billing and a customer portal that notifies when the car is ready. Monorepo with a Node/TypeScript API (Fastify + PostgreSQL), a Next.js web dashboard and Flutter apps.",
+      proj_title_10: "Café Labs Admin",
+      proj_desc_10: "Café Labs' internal management hub: the company's clients and finances in a single system. React + Vite + TypeScript SPA on Firebase (Google Auth, Firestore and Security Rules), with lead PDF export and per-user access rules. In production, used day to day at the company.",
+      proj_title_11: "Dindin — Finanças por Envelopes",
+      proj_desc_11: "Personal finance app organized around \"envelopes\": income arrives as balance and is allocated to spending envelopes (with a monthly limit) or saving envelopes (with a goal), with transfers between them. Cross-platform Flutter (Web, Android and Windows) with Firebase, UI in Portuguese and English. Landing page at dindin.cafelabs.net.",
+      proj_title_12: "Laudo — App de Vistorias",
+      proj_desc_12: "Flutter app (mobile + web) for construction/property inspections for an architect: she narrates what she sees per item/room and the app transcribes speech 100% on-device, attaches photos and generates the PDF report for the client. Works offline in the field and syncs when the connection returns.",
+      proj_title_13: "Patotive",
+      proj_desc_13: "Directory and operation of exclusive discount groups on WhatsApp, organized by product category (v1: sports and books). Next.js (web + PWA) with Firebase (Auth, Firestore, Hosting), live at patotive.vercel.app, with an affiliate marketplace integration in progress.",
 
       contact_panel_title: "GMAIL_NEURAL_LINK_TRANSMITTER",
       contact_panel_sub: "DIRECT DIRECT_CONNECT COMMS TUNNEL",
@@ -543,16 +575,16 @@ document.addEventListener("DOMContentLoaded", () => {
       // Impressão EN
       print_role: "Software Engineering Student (5th Period - PUC Minas)",
       print_sect_summary: "Professional Summary",
-      print_summary: "Software Engineering student (PUC Minas, 5th semester) with hands-on experience building real full-stack products — from data model to deploy —, including a multi-tenant SaaS currently in pilot with a real client. Currently responsible for the IT structure and support of Rede Decisão, pairing that infrastructure experience with development in JavaScript/TypeScript, Python and Java and the use of agentic AI tools (Claude Code). Prior background in digital marketing and social media communication.",
+      print_summary: "Software Engineering student (PUC Minas, 5th semester) and partner at Café Labs, focused on full-stack and mobile development, from data model to deploy. He is responsible for the IT structure and support of the Rede Decisão school (Belo Horizonte) and ships real products — from a multi-tenant SaaS in pilot with a client to Flutter apps and management systems. With a prior background in digital marketing and social media communication.",
       print_sect_skills: "Technical Skills",
       print_skill_ai: "Artificial Intelligence: Recommendation Algorithms, Programming Logic.",
       print_skill_design: "Design & Communications: Web Design, Digital Marketing, Visual Identity.",
       print_skill_tools: "Tools & Methods: Agile Frameworks (Scrum), Git/GitHub, API Integration, Figma.",
       print_skill_lang: "Languages: English (Basic).",
       print_sect_exp: "Work Experience",
-      print_exp_job_0: "IT Support — Rede Decisão",
+      print_exp_job_0: "IT Support — Rede Decisão School",
       print_exp_date_0: "Mar 2026 – Present",
-      print_exp_task_0_1: "Responsible for the entire IT structure and support of the network.",
+      print_exp_task_0_1: "Responsible for the school's IT structure: network infrastructure, equipment and systems, plus ongoing technical support for users.",
       print_exp_job_1: "Marketing and Logistics Intern — Spagnol Odontology",
       print_exp_task_1_1: "Designed and executed creative marketing assets and visual campaigns for local clinic media pipelines.",
       print_exp_task_1_2: "Coordinated internal patient onboarding log streams and digital customer support funnels.",
@@ -651,10 +683,23 @@ document.addEventListener("DOMContentLoaded", () => {
         org: "Rede Decisão",
         period: "Março 2026 - Atual",
         status: "EM ANDAMENTO",
-        desc: "Responsável por toda a estrutura de TI e suporte da rede, em Belo Horizonte.",
+        desc: "Responsável por toda a estrutura de TI e pelo suporte da escola Rede Decisão, em Belo Horizonte.",
         tasks: [
-          "Gestão e manutenção de toda a infraestrutura de TI da rede.",
+          "Gestão e manutenção da infraestrutura de TI da escola: rede, equipamentos e sistemas.",
           "Suporte técnico contínuo aos usuários e sistemas internos."
+        ]
+      },
+      "exp-cafelabs": {
+        title: "CAFÉ_LABS // DOSSIÊ_SÓCIO",
+        role: "Sócio e Desenvolvedor",
+        org: "Café Labs",
+        period: "Julho 2026 - Atual",
+        status: "EM ANDAMENTO",
+        desc: "Sócio da Café Labs, empresa de software que entrega produtos próprios e sistemas sob medida para clientes.",
+        tasks: [
+          "Desenvolvimento full-stack e mobile: Next.js, React, Node.js, Flutter e Firebase/Supabase.",
+          "Entrega de produtos reais: Box+ (oficina mecânica), Dindin (finanças), Laudo (vistorias), Patotive e Agenda Barbearia (SaaS em piloto).",
+          "Estruturação de projetos novos do zero — do brainstorm de produto ao deploy."
         ]
       },
       "exp-marketing": {
@@ -717,10 +762,23 @@ document.addEventListener("DOMContentLoaded", () => {
         org: "Rede Decisão",
         period: "March 2026 - Present",
         status: "IN PROGRESS",
-        desc: "Responsible for the entire IT structure and support of the network, in Belo Horizonte.",
+        desc: "Responsible for the entire IT structure and support of the Rede Decisão school, in Belo Horizonte.",
         tasks: [
-          "Management and maintenance of the network's entire IT infrastructure.",
+          "Management and maintenance of the school's IT infrastructure: network, equipment and systems.",
           "Ongoing technical support for internal users and systems."
+        ]
+      },
+      "exp-cafelabs": {
+        title: "CAFÉ_LABS // PARTNER_DOSSIER",
+        role: "Partner and Developer",
+        org: "Café Labs",
+        period: "July 2026 - Present",
+        status: "IN PROGRESS",
+        desc: "Partner at Café Labs, a software company that ships in-house products and custom systems for clients.",
+        tasks: [
+          "Full-stack and mobile development: Next.js, React, Node.js, Flutter and Firebase/Supabase.",
+          "Delivery of real products: Box+ (auto repair shop), Dindin (finance), Laudo (inspections), Patotive and Agenda Barbearia (SaaS in pilot).",
+          "Setting up new projects from scratch — from product brainstorm to deploy."
         ]
       },
       "exp-marketing": {
@@ -857,7 +915,9 @@ document.addEventListener("DOMContentLoaded", () => {
     projectTextBlocks[index].classList.add("active");
     
     // Atualizar contador
-    currIndexText.textContent = `0${index + 1}`;
+    currIndexText.textContent = String(index + 1).padStart(2, "0");
+    const totalEl = document.getElementById("total-proj");
+    if (totalEl) totalEl.textContent = String(projectSlides.length).padStart(2, "0");
   }
 
   btnPrev.addEventListener("click", () => {

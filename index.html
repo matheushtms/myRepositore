@@ -123,7 +123,7 @@
                 </div>
 
                 <div class="profile-bio">
-                  <p data-translate="profile_bio">Estudante de Engenharia de Software (PUC Minas, 5º período) focado em desenvolvimento full-stack, do modelo de dados ao deploy. Hoje alia essa formação à experiência prática como responsável pela estrutura de TI e suporte da Rede Decisão, além de projetos reais como um SaaS multi-tenant em piloto com cliente. Incorpora ferramentas de IA agentic (Claude Code) ao ciclo de desenvolvimento, com base prévia em marketing digital e comunicação para redes sociais.</p>
+                  <p data-translate="profile_bio">Estudante de Engenharia de Software (PUC Minas, 5º período) e sócio da Café Labs, focado em desenvolvimento full-stack e mobile, do modelo de dados ao deploy. Atua como responsável pela estrutura de TI e pelo suporte da escola Rede Decisão (BH) e entrega produtos reais — de um SaaS multi-tenant em piloto com cliente a apps Flutter e sistemas de gestão. Base prévia em marketing digital e comunicação para redes sociais.</p>
                 </div>
 
                 <div class="contact-links-grid">
@@ -332,7 +332,19 @@
                     <div class="timeline-content">
                       <h3 class="timeline-job" data-translate="timeline_job_0">Suporte de TI</h3>
                       <div class="timeline-org">Rede Decisão</div>
-                      <p class="timeline-summary" data-translate="timeline_summary_0">Responsável por toda a estrutura de TI e suporte da rede.</p>
+                      <p class="timeline-summary" data-translate="timeline_summary_0">Responsável pela estrutura de TI da escola: infraestrutura de rede, equipamentos e sistemas, além do suporte técnico contínuo aos usuários.</p>
+                      <span class="dossier-hint" data-translate="timeline_hint">Clique para expandir arquivo dossiê</span>
+                    </div>
+                  </div>
+
+                  <!-- Experiência: Café Labs -->
+                  <div class="timeline-item clickable" data-dossier="exp-cafelabs">
+                    <div class="timeline-badge active"></div>
+                    <div class="timeline-date">Jul 2026 - Atual</div>
+                    <div class="timeline-content">
+                      <h3 class="timeline-job" data-translate="timeline_job_cl">Sócio e Desenvolvedor</h3>
+                      <div class="timeline-org">Café Labs</div>
+                      <p class="timeline-summary" data-translate="timeline_summary_cl">Sócio de empresa de software: desenvolvimento full-stack e mobile de produtos próprios e de clientes (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).</p>
                       <span class="dossier-hint" data-translate="timeline_hint">Clique para expandir arquivo dossiê</span>
                     </div>
                   </div>
@@ -490,13 +502,67 @@
                     <span class="project-status-tag" data-translate="project_tag_active">IMPLANTADO // v1.2.0</span>
                   </div>
                 </div>
+                <!-- Slide 9: Box+ — Gestão de Oficina Mecânica -->
+                <div class="project-slide" id="slide-box-plus">
+                  <div class="project-media-placeholder">
+                    <span class="placeholder-icon">◈</span>
+                    <span class="placeholder-label" data-translate="project_no_preview">PREVIEW INDISPONÍVEL</span>
+                  </div>
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag" data-translate="project_tag_cafelabs">CAFÉ LABS // PRODUTO</span>
+                  </div>
+                </div>
+
+                <!-- Slide 10: Café Labs Admin -->
+                <div class="project-slide" id="slide-cafelabs-admin">
+                  <div class="project-media-placeholder">
+                    <span class="placeholder-icon">◈</span>
+                    <span class="placeholder-label" data-translate="project_no_preview">PREVIEW INDISPONÍVEL</span>
+                  </div>
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag" data-translate="project_tag_cafelabs">CAFÉ LABS // PRODUTO</span>
+                  </div>
+                </div>
+
+                <!-- Slide 11: Dindin — Finanças por Envelopes -->
+                <div class="project-slide" id="slide-dindin">
+                  <div class="project-media-placeholder">
+                    <span class="placeholder-icon">◈</span>
+                    <span class="placeholder-label" data-translate="project_no_preview">PREVIEW INDISPONÍVEL</span>
+                  </div>
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag" data-translate="project_tag_cafelabs">CAFÉ LABS // PRODUTO</span>
+                  </div>
+                </div>
+
+                <!-- Slide 12: Laudo — App de Vistorias -->
+                <div class="project-slide" id="slide-laudo">
+                  <div class="project-media-placeholder">
+                    <span class="placeholder-icon">◈</span>
+                    <span class="placeholder-label" data-translate="project_no_preview">PREVIEW INDISPONÍVEL</span>
+                  </div>
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag" data-translate="project_tag_cafelabs">CAFÉ LABS // PRODUTO</span>
+                  </div>
+                </div>
+
+                <!-- Slide 13: Patotive -->
+                <div class="project-slide" id="slide-patotive">
+                  <div class="project-media-placeholder">
+                    <span class="placeholder-icon">◈</span>
+                    <span class="placeholder-label" data-translate="project_no_preview">PREVIEW INDISPONÍVEL</span>
+                  </div>
+                  <div class="project-image-overlay">
+                    <span class="project-status-tag" data-translate="project_tag_cafelabs">CAFÉ LABS // PRODUTO</span>
+                  </div>
+                </div>
               </div>
 
               <!-- Painel de Descrições do Projeto -->
               <div class="project-details-panel">
                 <div class="project-nav-controls">
                   <button id="btn-prev-project" class="btn-proj-nav">◀ PREV_NODE</button>
-                  <div class="proj-counter font-mono"><span id="curr-proj-index">01</span> / 08</div>
+                  <div class="proj-counter font-mono"><span id="curr-proj-index">01</span> / <span id="total-proj">13</span></div>
                   <button id="btn-next-project" class="btn-proj-nav">NEXT_NODE ▶</button>
                 </div>
                 
@@ -599,6 +665,65 @@
                     <span class="tech-tag">Supabase</span>
                   </div>
                   <p class="project-desc" data-translate="proj_desc_8">E-commerce/catálogo de roupas usadas, desenvolvido para um cliente real, com a mesma stack do Agenda Barbearia (Next.js + Supabase).</p>
+                </div>
+
+                <!-- Descrição Box+ — Gestão de Oficina Mecânica -->
+                <div class="project-text-block" id="details-box-plus">
+                  <h2 class="project-title font-hud" data-translate="proj_title_9">Box+ — Gestão de Oficina Mecânica</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Fastify</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Flutter</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_9">Sistema de gestão para uma oficina mecânica real (Café Labs): agendamento, quadro de etapas do carro, histórico de serviços com peças usadas, estoque, manutenção preventiva, faturamento e portal do cliente com notificação quando o carro fica pronto. Monorepo com API Node/TypeScript (Fastify + PostgreSQL), painel web em Next.js e apps Flutter.</p>
+                </div>
+
+                <!-- Descrição Café Labs Admin -->
+                <div class="project-text-block" id="details-cafelabs-admin">
+                  <h2 class="project-title font-hud" data-translate="proj_title_10">Café Labs Admin</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Vite</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Firebase</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_10">Hub de gestão interna da Café Labs: clientes e financeiro da empresa em um só sistema. SPA em React + Vite + TypeScript sobre Firebase (Auth com Google, Firestore e Security Rules), com PDF de leads e regras de acesso por usuário. Em produção, usado no dia a dia da empresa.</p>
+                </div>
+
+                <!-- Descrição Dindin — Finanças por Envelopes -->
+                <div class="project-text-block" id="details-dindin">
+                  <h2 class="project-title font-hud" data-translate="proj_title_11">Dindin — Finanças por Envelopes</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Riverpod</span>
+                    <span class="tech-tag">Firebase</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_11">App de finanças pessoais organizado em "caixinhas" (envelopes): a receita entra como saldo e é alocada em caixinhas de gasto (com limite mensal) ou de poupança (com meta), com transferência entre elas. Flutter multiplataforma (Web, Android e Windows) com Firebase, interface em português e inglês. Landing em dindin.cafelabs.net.</p>
+                </div>
+
+                <!-- Descrição Laudo — App de Vistorias -->
+                <div class="project-text-block" id="details-laudo">
+                  <h2 class="project-title font-hud" data-translate="proj_title_12">Laudo — App de Vistorias</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Flutter</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Offline-first</span>
+                    <span class="tech-tag">PDF</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_12">App Flutter (mobile + web) de vistorias de obra/imóvel para uma arquiteta: ela narra o que vê por item/ambiente e o app transcreve a voz 100% no dispositivo, anexa fotos e gera o laudo em PDF para o cliente. Funciona offline em campo e sincroniza quando a conexão volta.</p>
+                </div>
+
+                <!-- Descrição Patotive -->
+                <div class="project-text-block" id="details-patotive">
+                  <h2 class="project-title font-hud" data-translate="proj_title_13">Patotive</h2>
+                  <div class="project-tech-tags">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">PWA</span>
+                    <span class="tech-tag">Firebase</span>
+                  </div>
+                  <p class="project-desc" data-translate="proj_desc_13">Diretório e operação de grupos exclusivos de desconto no WhatsApp, organizados por categoria de produto (v1: esportes e livros). Next.js (web + PWA) com Firebase (Auth, Firestore, Hosting), no ar em patotive.vercel.app, com integração a marketplace de afiliados em andamento.</p>
                 </div>
               </div>
 
@@ -729,13 +854,13 @@
     
     <div class="print-section">
       <h3 data-translate="print_sect_summary">Resumo Profissional</h3>
-      <p id="print-summary" data-translate="print_summary">Estudante de Engenharia de Software (PUC Minas, 5º período) com experiência prática no desenvolvimento full-stack de produtos reais — do modelo de dados ao deploy —, incluindo um SaaS multi-tenant hoje em piloto com cliente real. Atua atualmente como responsável pela estrutura de TI e suporte da Rede Decisão, aliando essa vivência de infraestrutura ao desenvolvimento com JavaScript/TypeScript, Python e Java e ao uso de ferramentas de IA agentic (Claude Code). Base prévia em marketing digital e comunicação para redes sociais.</p>
+      <p id="print-summary" data-translate="print_summary">Estudante de Engenharia de Software (PUC Minas, 5º período) e sócio da Café Labs, focado em desenvolvimento full-stack e mobile, do modelo de dados ao deploy. Atua como responsável pela estrutura de TI e pelo suporte da escola Rede Decisão (BH) e entrega produtos reais — de um SaaS multi-tenant em piloto com cliente a apps Flutter e sistemas de gestão. Base prévia em marketing digital e comunicação para redes sociais.</p>
     </div>
 
     <div class="print-section">
       <h3 data-translate="print_sect_skills">Habilidades Técnicas</h3>
       <ul>
-        <li><strong>Linguagens e Frameworks:</strong> Python, JavaScript, Java, HTML5, CSS.</li>
+        <li><strong>Linguagens e Frameworks:</strong> JavaScript/TypeScript, Python, Java, Dart, SQL, HTML5, CSS; React, Next.js, Flutter, Node.js, Firebase, Supabase.</li>
         <li id="print-skill-ai" data-translate="print_skill_ai"><strong>Inteligência Artificial:</strong> Algoritmos de Recomendação, Lógica de Programação.</li>
         <li id="print-skill-design" data-translate="print_skill_design"><strong>Design e Comunicação:</strong> Web Design, Marketing Digital, Identidade Visual.</li>
         <li id="print-skill-tools" data-translate="print_skill_tools"><strong>Ferramentas e Metodologias:</strong> Metodologias Ágeis (Scrum), Git/GitHub, Integração com APIs, Figma.</li>
@@ -747,11 +872,21 @@
       <h3 data-translate="print_sect_exp">Experiência Profissional</h3>
       <div class="print-exp-item">
         <div class="print-exp-header">
-          <strong id="print-exp-job-0" data-translate="print_exp_job_0">Suporte de TI — Rede Decisão</strong>
+          <strong id="print-exp-job-0" data-translate="print_exp_job_0">Suporte de TI — Escola Rede Decisão</strong>
           <span class="print-date" id="print-exp-date-0" data-translate="print_exp_date_0">Mar 2026 – Atual</span>
         </div>
         <ul>
-          <li id="print-exp-task-0-1" data-translate="print_exp_task_0_1">Responsável por toda a estrutura de TI e suporte da rede.</li>
+          <li id="print-exp-task-0-1" data-translate="print_exp_task_0_1">Responsável pela estrutura de TI da escola: infraestrutura de rede, equipamentos e sistemas, além do suporte técnico contínuo aos usuários.</li>
+        </ul>
+      </div>
+
+      <div class="print-exp-item">
+        <div class="print-exp-header">
+          <strong id="print-exp-job-cl" data-translate="print_exp_job_cl">Sócio e Desenvolvedor — Café Labs</strong>
+          <span class="print-date" data-translate="print_exp_date_cl">Jul 2026 – Atual</span>
+        </div>
+        <ul>
+          <li id="print-exp-task-cl-1" data-translate="print_exp_task_cl_1">Sócio de empresa de software: desenvolvimento full-stack e mobile de produtos próprios e de clientes (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).</li>
         </ul>
       </div>
 

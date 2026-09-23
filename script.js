@@ -394,10 +394,10 @@ document.addEventListener("DOMContentLoaded", () => {
       proj_title_8: "Brechó Online",
       proj_desc_8: "E-commerce/catálogo de roupas usadas, desenvolvido para um cliente real, com a mesma stack do Agenda Barbearia (Next.js + Supabase).",
       timeline_job_cl: "Desenvolvedor Freelancer",
-      timeline_summary_cl: "Projetos freelancer em parceria com dois amigos: desenvolvimento full-stack e mobile de sistemas de gestão e apps sob demanda para clientes reais (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).",
+      timeline_summary_cl: "Projetos freelancer em parceria com dois amigos: desenvolvimento full-stack e mobile de sistemas de gestão e apps sob demanda para clientes reais (Box+, Dindin, Laudo, Patetive, Agenda Barbearia).",
       print_exp_job_cl: "Desenvolvedor Freelancer — com dois amigos",
       print_exp_date_cl: "Jul 2026 – Atual",
-      print_exp_task_cl_1: "Projetos freelancer em parceria com dois amigos: desenvolvimento full-stack e mobile de sistemas de gestão e apps sob demanda para clientes reais (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).",
+      print_exp_task_cl_1: "Projetos freelancer em parceria com dois amigos: desenvolvimento full-stack e mobile de sistemas de gestão e apps sob demanda para clientes reais (Box+, Dindin, Laudo, Patetive, Agenda Barbearia).",
       project_tag_cafelabs: "CAFÉ LABS // PRODUTO",
       proj_title_9: "Box+ — Gestão de Oficina Mecânica",
       proj_desc_9: "Sistema de gestão para uma oficina mecânica real, projeto freelancer: agendamento, quadro de etapas do carro, histórico de serviços com peças usadas, estoque, manutenção preventiva, faturamento e portal do cliente com notificação quando o carro fica pronto. Monorepo com API Node/TypeScript (Fastify + PostgreSQL), painel web em Next.js e apps Flutter.",
@@ -407,7 +407,7 @@ document.addEventListener("DOMContentLoaded", () => {
       proj_desc_11: "App de finanças pessoais organizado em \"caixinhas\" (envelopes): a receita entra como saldo e é alocada em caixinhas de gasto (com limite mensal) ou de poupança (com meta), com transferência entre elas. Flutter multiplataforma (Web, Android e Windows) com Firebase, interface em português e inglês. Landing em dindin.cafelabs.net.",
       proj_title_12: "Laudo — App de Vistorias",
       proj_desc_12: "App Flutter (mobile + web) de vistorias de obra/imóvel para uma arquiteta: ela narra o que vê por item/ambiente e o app transcreve a voz 100% no dispositivo, anexa fotos e gera o laudo em PDF para o cliente. Funciona offline em campo e sincroniza quando a conexão volta.",
-      proj_title_13: "Patotive",
+      proj_title_13: "Patetive",
       proj_desc_13: "Diretório e operação de grupos exclusivos de desconto no WhatsApp, organizados por categoria de produto (v1: esportes e livros). Next.js (web + PWA) com Firebase (Auth, Firestore, Hosting), no ar em patotive.vercel.app, com integração a marketplace de afiliados em andamento.",
 
       contact_panel_title: "DISPARADOR_DE_TRANSMISSÃO_GMAIL",
@@ -547,10 +547,10 @@ document.addEventListener("DOMContentLoaded", () => {
       proj_title_8: "Brechó Online",
       proj_desc_8: "Second-hand clothing e-commerce/catalog, built for a real client, with the same stack as Agenda Barbearia (Next.js + Supabase).",
       timeline_job_cl: "Freelance Developer",
-      timeline_summary_cl: "Freelance projects in partnership with two friends: full-stack and mobile development of on-demand management systems and apps for real clients (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).",
+      timeline_summary_cl: "Freelance projects in partnership with two friends: full-stack and mobile development of on-demand management systems and apps for real clients (Box+, Dindin, Laudo, Patetive, Agenda Barbearia).",
       print_exp_job_cl: "Freelance Developer — with two friends",
       print_exp_date_cl: "Jul 2026 – Present",
-      print_exp_task_cl_1: "Freelance projects in partnership with two friends: full-stack and mobile development of on-demand management systems and apps for real clients (Box+, Dindin, Laudo, Patotive, Agenda Barbearia).",
+      print_exp_task_cl_1: "Freelance projects in partnership with two friends: full-stack and mobile development of on-demand management systems and apps for real clients (Box+, Dindin, Laudo, Patetive, Agenda Barbearia).",
       project_tag_cafelabs: "CAFÉ LABS // PRODUCT",
       proj_title_9: "Box+ — Gestão de Oficina Mecânica",
       proj_desc_9: "Management system for a real auto repair shop, a freelance project: scheduling, car-stage board, service history with parts used, inventory, preventive maintenance, billing and a customer portal that notifies when the car is ready. Monorepo with a Node/TypeScript API (Fastify + PostgreSQL), a Next.js web dashboard and Flutter apps.",
@@ -560,7 +560,7 @@ document.addEventListener("DOMContentLoaded", () => {
       proj_desc_11: "Personal finance app organized around \"envelopes\": income arrives as balance and is allocated to spending envelopes (with a monthly limit) or saving envelopes (with a goal), with transfers between them. Cross-platform Flutter (Web, Android and Windows) with Firebase, UI in Portuguese and English. Landing page at dindin.cafelabs.net.",
       proj_title_12: "Laudo — App de Vistorias",
       proj_desc_12: "Flutter app (mobile + web) for construction/property inspections for an architect: she narrates what she sees per item/room and the app transcribes speech 100% on-device, attaches photos and generates the PDF report for the client. Works offline in the field and syncs when the connection returns.",
-      proj_title_13: "Patotive",
+      proj_title_13: "Patetive",
       proj_desc_13: "Directory and operation of exclusive discount groups on WhatsApp, organized by product category (v1: sports and books). Next.js (web + PWA) with Firebase (Auth, Firestore, Hosting), live at patotive.vercel.app, with an affiliate marketplace integration in progress.",
 
       contact_panel_title: "GMAIL_NEURAL_LINK_TRANSMITTER",
@@ -714,7 +714,7 @@ document.addEventListener("DOMContentLoaded", () => {
         desc: "Projetos freelancer desenvolvidos em parceria com dois amigos: sistemas sob medida e apps mobile entregues a clientes reais.",
         tasks: [
           "Desenvolvimento full-stack e mobile: Next.js, React, Node.js, Flutter e Firebase/Supabase.",
-          "Entrega de produtos reais: Box+ (oficina mecânica), Dindin (finanças), Laudo (vistorias), Patotive e Agenda Barbearia (SaaS em piloto).",
+          "Entrega de produtos reais: Box+ (oficina mecânica), Dindin (finanças), Laudo (vistorias), Patetive e Agenda Barbearia (SaaS em piloto).",
           "Estruturação de projetos novos do zero — do brainstorm de produto ao deploy."
         ]
       },
@@ -793,7 +793,7 @@ document.addEventListener("DOMContentLoaded", () => {
         desc: "Freelance projects built in partnership with two friends: custom systems and mobile apps delivered to real clients.",
         tasks: [
           "Full-stack and mobile development: Next.js, React, Node.js, Flutter and Firebase/Supabase.",
-          "Delivery of real products: Box+ (auto repair shop), Dindin (finance), Laudo (inspections), Patotive and Agenda Barbearia (SaaS in pilot).",
+          "Delivery of real products: Box+ (auto repair shop), Dindin (finance), Laudo (inspections), Patetive and Agenda Barbearia (SaaS in pilot).",
           "Setting up new projects from scratch — from product brainstorm to deploy."
         ]
       },

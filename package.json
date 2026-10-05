@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/build-projects.mjs",
+    "gerar": "node scripts/build-projects.mjs",
     "start": "npx serve ."
   }
 }

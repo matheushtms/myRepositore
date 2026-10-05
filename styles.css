@@ -110,7 +110,7 @@ section.blk{padding-block:var(--s8)}
 .facts dl{display:grid;grid-template-columns:auto 1fr;gap:var(--s3) var(--s5);margin:0}
 .facts dt{align-self:center}.facts dd{margin:0;font-weight:500;min-width:0;overflow-wrap:anywhere}
 .back h3{font-size:1.25rem;margin-bottom:var(--s3)}
-@media (max-width:900px){.bento .side,.bento .bio,.bento .facts,.bento .back{grid-column:1/-1}}
+@media (max-width:900px){.bento .side,.bento .bio,.bento .facts,.bento .back{grid-column:1/-1}.bento .side{display:contents}.bento .photo,.bento .side .more{grid-column:1/-1}.bento .photo{order:0}.bento .bio{order:1}.bento .side .more{order:2}.bento .facts{order:3}.bento .back{order:4}}
 
 .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
 .skills>*{min-width:0}

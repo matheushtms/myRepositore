@@ -1,0 +1,9 @@
+{
+  "name": "myrepositore",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-projects.mjs",
+    "start": "npx serve ."
+  }
+}
